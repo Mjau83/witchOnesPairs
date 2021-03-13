@@ -56,21 +56,64 @@ Baby Witch (easy), Medium (medium) or ... (hard)
 
 ### Design
 
-**Fonts:**
+#### Fonts:
 
 I used fonts from [Google Fonts](https://fonts.google.com/)
 * Italianno
 * Cormorant
 
-**Images:**
+#### Images:
 
 All images are my own and is taken by me using eihter my cellphone or my 
 Canon EOS450D. All images are also edited by me.
 
-**Color:** 
+#### Color: 
 
 *
 *
 
 [color palette image goes here]
 
+## Wireframes
+Balsamiq was uesed to create the wireframes for this project
+
+* Desktop Wireframes
+[image links]
+* Tablet Wireframes
+[image links]
+* Smartphone Wireframes 
+[image links]
+
+
+## Features
+* Responsive on different devices
+* A spiritual message for every matched pair of cards
+* A congratulations message and a confetti rain when all cards are matched
+* Ability to level of difficulty
+* Abilty to compare scores with previous players
+
+## Technologies Used
+#### Languages
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+#### Frameworks, Libraries, Programs
+* [Balsamic Images](https://balsamiq.com)
+ was used to create wireframes in the beginning of the project
+* [Google Fonts](https://fonts.google.com/)
+was used to import the fonts mentioned above in the project.
+* [Gimp](https://www.gimp.org/)
+was used to edit photos.
+* 
+
+* [Gitpod](https://gitpod.io/)
+was used for coding the project
+* [Github](https://github.com/)
+after being pushed in Gitpod the project was saved and stored on GitHub.
+
+
+## Testing
+### Buggs
+
+## Deployment
+## CREDITS
