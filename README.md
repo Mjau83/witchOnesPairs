@@ -36,7 +36,7 @@ and gives them small rewards along the way.
 ### User Goals
 * The should be responsive so that it looks good and works on well on desktops,
 tablets and smartphones
-* The user should be able to choose on what kind of level they want to play.
+* The user should be able to choose on what kind of level they want to play
 Baby Witch (easy), Medium (medium) or ... (hard)
 * The user should get positive feedback when cards are matched
 * The game should have the estetics that is appeling to the spiritual community
@@ -101,19 +101,42 @@ Balsamiq was uesed to create the wireframes for this project
 * [Balsamic Images](https://balsamiq.com)
  was used to create wireframes in the beginning of the project
 * [Google Fonts](https://fonts.google.com/)
-was used to import the fonts mentioned above in the project.
+was used to import the fonts mentioned above in the project
 * [Gimp](https://www.gimp.org/)
 was used to edit photos.
-* 
-
+* [Confetti rain code](https://www.tjejerkodar.se/) are from a mini challange
+by Tjejer Kodar, and was modified to fit the project
 * [Gitpod](https://gitpod.io/)
 was used for coding the project
 * [Github](https://github.com/)
-after being pushed in Gitpod the project was saved and stored on GitHub.
+after being pushed in Gitpod the project was saved and stored on GitHub
 
 
 ## Testing
 ### Buggs
 
 ## Deployment
+### GitHub Pages
+How to deploy project using Github pages:
+
+1. Go to [Github](https://github.com/)
+2. Log in and find the repository
+3. Find the "Settings" (with a gear icon)
+4. Scroll down on the page until you find the "Github Pages" section
+5. Under "Source" you'll find a dropdown which is set to "none"
+6. Change it to "Master"
+7. The page refresh on its own
+8. Scroll back down to "Github Pages" 
+9. A green alert box will now tell you that your site been published and provide you a link to the site.
+
+How make a local clone:
+1. Locate the repository
+2. In the reposirory you can either use the green Gitpod or Code/Download button
+3. To clone with HTTPS option click the Code/Download button, and copy the link displayed.
+4. Open the IDE, and open the Git Terminal if it's not open.
+5. Change the working directory to the location where the cloned directory is to be made.
+6. Type "git clone" command and paste the url copied in step 3.
+7. Press Enter. The local clone will be created
+
+
 ## CREDITS
