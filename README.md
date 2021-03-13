@@ -19,8 +19,8 @@ and gives them small rewards along the way.
 ## Table of Content
 
 * ### **User Experience (UX)**
-    * ### Goals
-    * ### Stories
+    * ### User Goals
+    * ### User Stories
     * ### Owner
     * ### Design 
 * ### **Wireframes**
@@ -30,4 +30,23 @@ and gives them small rewards along the way.
     * ### Buggs
 * ### **Deployment**
 * ### **CREDITS**
+
+## User Experience (UX)
+
+### User Goals
+* The should be responsive so that it looks good and works on well on desktops,
+tablets and smartphones
+* The user should be able to choose on what kind of level they want to play.
+Baby Witch (easy), Medium (medium) or ... (hard)
+* The user should get positive feedback when cards are matched
+* The game should have the estetics that is appeling to the spiritual community
+
+### User Stories
+* As a user I want to, be able to choose on what evel of difficulty I want to start 
+* As a user I want to, know when I have a match
+* As a user I want to, know when all cards are matched
+* As a user I want to, know how to play 
+* As a user I want to, track my score
+* As a user I want to, compare my score to other players
+* As a user I want to, navigate the site with ease
 
