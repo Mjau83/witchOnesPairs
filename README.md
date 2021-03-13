@@ -21,7 +21,7 @@ and gives them small rewards along the way.
 * ### **User Experience (UX)**
     * ### User Goals
     * ### User Stories
-    * ### Owner
+    * ### Site Owner Goals
     * ### Design 
 * ### **Wireframes**
 * ### **Features**
@@ -49,4 +49,28 @@ Baby Witch (easy), Medium (medium) or ... (hard)
 * As a user I want to, track my score
 * As a user I want to, compare my score to other players
 * As a user I want to, navigate the site with ease
+
+### Site Owner Goals
+* To have a site that is attractive to the spiritual community
+* For users to have fun while playing
+
+### Design
+
+**Fonts:**
+
+I used fonts from [Google Fonts](https://fonts.google.com/)
+* Italianno
+* Cormorant
+
+**Images:**
+
+All images are my own and is taken by me using eihter my cellphone or my 
+Canon EOS450D. All images are also edited by me.
+
+**Color:** 
+
+*
+*
+
+[color palette image goes here]
 
