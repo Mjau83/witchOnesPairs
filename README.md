@@ -1,7 +1,7 @@
 # Witch Ones Pairs?
 ### ~ A magical memory game for the modern Witch ~
 
-[ Mock up images goes here ]
+![ Mock up images goes here ]
 
 ## Project Goals
 **What is it?** 
@@ -72,13 +72,16 @@ Canon EOS450D. All images are also edited by me.
 *
 *
 
-[color palette image goes here]
+![color palette image goes here]
 
 ## Wireframes
 Balsamiq was uesed to create the wireframes for this project
 
 * Desktop Wireframes
 [image links]
+    * [Index](assets/wireframes/index.png)
+    * [Index (match)](assets/wireframes/index-match.png)
+    * [Index (all matched)](assets/wireframes/index-all-matched.png)
 * Tablet Wireframes
 [image links]
 * Smartphone Wireframes 
