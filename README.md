@@ -18,19 +18,21 @@ and gives them small rewards along the way.
 
 ## Table of Content
 
-* #### [**UX**](#ux)
+* [**UX**](#ux)
     * [User Goals](#user-goals)
     * [User Stories](#user-stories)
     * [Site Owner Goals](#site-owner-goals)
     * [Design](#design) 
-* #### [**Wireframes**](#wireframes)
-* #### [**Features**](#features)
-* #### [**Technologies Used**](#technologies-used)
-* #### [**Testing**](#testing)
+* [**Wireframes**](#wireframes)
+* [**Features**](#features)
+* [**Technologies Used**](#technologies-used)
+    * [Languages](#languages)
+    * [Frameworks Libraries Programs](#frameworks-libraries-programs)
+* [**Testing**](#testing)
     * [Buggs](#buggs)
-* #### [**Deployment**](#deployment)
+* [**Deployment**](#deployment)
     * [GitHub Pages](#gitHub-pages)
-* #### [**Credits**](#credits)
+* [**Credits**](#credits)
 
 ## UX
 
@@ -75,6 +77,8 @@ Canon EOS450D. All images are also edited by me.
 
 ![color palette image goes here]
 
+[Back to top](#table-of-content)
+
 ## Wireframes
 Balsamiq was uesed to create the wireframes for this project
 
@@ -88,6 +92,7 @@ Balsamiq was uesed to create the wireframes for this project
 * Smartphone Wireframes 
 [image links]
 
+[Back to top](#table-of-content)
 
 ## Features
 * Responsive on different devices
@@ -96,12 +101,14 @@ Balsamiq was uesed to create the wireframes for this project
 * Ability to level of difficulty
 * Abilty to compare scores with previous players
 
+[Back to top](#table-of-content)
+
 ## Technologies Used
 #### Languages
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-#### Frameworks, Libraries, Programs
+#### Frameworks Libraries Programs
 * [Balsamic Images](https://balsamiq.com)
  was used to create wireframes in the beginning of the project
 * [Google Fonts](https://fonts.google.com/)
@@ -115,9 +122,12 @@ was used for coding the project
 * [Github](https://github.com/)
 after being pushed in Gitpod the project was saved and stored on GitHub
 
+[Back to top](#table-of-content)
 
 ## Testing
 ### Buggs
+
+[Back to top](#table-of-content)
 
 ## Deployment
 ### GitHub Pages
@@ -142,5 +152,8 @@ How make a local clone:
 6. Type "git clone" command and paste the url copied in step 3.
 7. Press Enter. The local clone will be created
 
+[Back to top](#table-of-content)
 
 ## Credits
+
+[Back to top](#table-of-content)
