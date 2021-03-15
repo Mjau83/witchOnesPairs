@@ -18,18 +18,18 @@ and gives them small rewards along the way.
 
 ## Table of Content
 
-* ### **User Experience (UX)**
-    * ### User Goals
-    * ### User Stories
-    * ### Site Owner Goals
-    * ### Design 
-* ### **Wireframes**
-* ### **Features**
-* ### **Technologies Used**
-* ### **Testing**
-    * ### Buggs
-* ### **Deployment**
-* ### **CREDITS**
+* #### **User Experience (UX)**
+    * User Goals
+    * User Stories
+    * Site Owner Goals
+    * Design 
+* #### **Wireframes**
+* #### **Features**
+* #### **Technologies Used**
+* #### **Testing**
+    * Buggs
+* #### **Deployment**
+* #### **CREDITS**
 
 ## User Experience (UX)
 
