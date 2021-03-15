@@ -59,8 +59,8 @@ Baby Witch (easy), Medium (medium) or ... (hard)
 #### Fonts:
 
 I used fonts from [Google Fonts](https://fonts.google.com/)
-* Italianno
-* Cormorant
+* [Italianno](https://fonts.google.com/specimen/Italianno?preview.text_type=custom)
+* [Cormorant](https://fonts.google.com/specimen/Cormorant?preview.text_type=custom)
 
 #### Images:
 
