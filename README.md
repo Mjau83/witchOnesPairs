@@ -18,20 +18,21 @@ and gives them small rewards along the way.
 
 ## Table of Content
 
-* #### **User Experience (UX)**
-    * User Goals
-    * User Stories
-    * Site Owner Goals
-    * Design 
-* #### **Wireframes**
-* #### **Features**
-* #### **Technologies Used**
-* #### **Testing**
-    * Buggs
-* #### **Deployment**
-* #### **CREDITS**
+* #### [**UX**](#ux)
+    * [User Goals](#user-goals)
+    * [User Stories](#user-stories)
+    * [Site Owner Goals](#site-owner-goals)
+    * [Design](#design) 
+* #### [**Wireframes**](#wireframes)
+* #### [**Features**](#features)
+* #### [**Technologies Used**](#technologies-used)
+* #### [**Testing**](#testing)
+    * [Buggs](#buggs)
+* #### [**Deployment**](#deployment)
+    * [GitHub Pages](#gitHub-pages)
+* #### [**Credits**](#credits)
 
-## User Experience (UX)
+## UX
 
 ### User Goals
 * The should be responsive so that it looks good and works on well on desktops,
@@ -142,4 +143,4 @@ How make a local clone:
 7. Press Enter. The local clone will be created
 
 
-## CREDITS
+## Credits
