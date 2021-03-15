@@ -5,7 +5,7 @@
 
 ## Project Goals
 **What is it?** 
-This is a fun game that will practice both your memory and your intuition.
+This is a spiritually themed game that will practice both your memory and your intuition.
 Are you feeling strong intuitions today? Have a go and find out!
 
 **Who is it for?**
@@ -13,7 +13,7 @@ This game is for anyone that might be into spiritual stuff or might feel that th
 have a witchy vibe.
 
 **Why am I building it?**
-I want to create a fun memory game that both encurage the user to practice thier memory, 
+I want to create a fun memory game that both encurage the user to practice their memory, 
 and gives them small rewards along the way.
 
 ## Table of Content
@@ -67,7 +67,7 @@ I used fonts from [Google Fonts](https://fonts.google.com/)
 
 #### Images:
 
-All images are my own and is taken by me using eihter my cellphone or my 
+All images are my own and is taken by me using eihter my Sony Xperia or my 
 Canon EOS450D. All images are also edited by me.
 
 #### Color: 
@@ -80,17 +80,16 @@ Canon EOS450D. All images are also edited by me.
 [Back to top](#table-of-content)
 
 ## Wireframes
-Balsamiq was uesed to create the wireframes for this project
+Balsamiq was used to create the wireframes for this project
 
 * Desktop Wireframes
-[image links]
-    * [Index](assets/wireframes/index.png)
-    * [Index (match)](assets/wireframes/index-match.png)
-    * [Index (all matched)](assets/wireframes/index-all-matched.png)
+    * [Index](wireframes/index.png)
+    * [Index (match)](wireframes/index-match.png)
+    * [Index (all matched)](wireframes/index-all-matched.png)
 * Tablet Wireframes
-[image links]
+    * [image links]
 * Smartphone Wireframes 
-[image links]
+    * [image links]
 
 [Back to top](#table-of-content)
 
@@ -98,7 +97,7 @@ Balsamiq was uesed to create the wireframes for this project
 * Responsive on different devices
 * A spiritual message for every matched pair of cards
 * A congratulations message and a confetti rain when all cards are matched
-* Ability to level of difficulty
+* Ability to choose level of difficulty
 * Abilty to compare scores with previous players
 
 [Back to top](#table-of-content)
@@ -109,7 +108,7 @@ Balsamiq was uesed to create the wireframes for this project
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 #### Frameworks Libraries Programs
-* [Balsamic Images](https://balsamiq.com)
+* [Balsamic](https://balsamiq.com)
  was used to create wireframes in the beginning of the project
 * [Google Fonts](https://fonts.google.com/)
 was used to import the fonts mentioned above in the project
@@ -120,7 +119,7 @@ by Tjejer Kodar, and was modified to fit the project
 * [Gitpod](https://gitpod.io/)
 was used for coding the project
 * [Github](https://github.com/)
-after being pushed in Gitpod the project was saved and stored on GitHub
+was used to saved and stored on the project after being pushed from Gitpod
 
 [Back to top](#table-of-content)
 
@@ -147,7 +146,7 @@ How make a local clone:
 1. Locate the repository
 2. In the reposirory you can either use the green Gitpod or Code/Download button
 3. To clone with HTTPS option click the Code/Download button, and copy the link displayed.
-4. Open the IDE, and open the Git Terminal if it's not open.
+4. Open the command line if it's not open.
 5. Change the working directory to the location where the cloned directory is to be made.
 6. Type "git clone" command and paste the url copied in step 3.
 7. Press Enter. The local clone will be created
