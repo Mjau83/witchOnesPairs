@@ -45,7 +45,7 @@ Baby Witch (easy), Medium (medium) or ... (hard)
 * The game should have the estetics that is appeling to the spiritual community
 
 ### User Stories
-* As a user I want to, be able to choose on what evel of difficulty I want to start 
+* As a user I want to, be able to choose on what level of difficulty I want to start 
 * As a user I want to, know when I have a match
 * As a user I want to, know when all cards are matched
 * As a user I want to, know how to play 
@@ -140,7 +140,7 @@ was used to saved and stored on the project after being pushed from Gitpod
 [Back to top](#table-of-content)
 
 ## Testing
-### Buggs
+### Bugs
 
 [Back to top](#table-of-content)
 
@@ -154,7 +154,7 @@ How to deploy project using Github pages:
 4. Scroll down on the page until you find the "Github Pages" section
 5. Under "Source" you'll find a dropdown which is set to "none"
 6. Change it to "Master"
-7. The page refresh on its own
+7. Then click the save button
 8. Scroll back down to "Github Pages" 
 9. A green alert box will now tell you that your site been published and provide you a link to the site.
 
