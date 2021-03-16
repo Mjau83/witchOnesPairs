@@ -62,8 +62,10 @@ Baby Witch (easy), Medium (medium) or ... (hard)
 #### Fonts:
 
 I used fonts from [Google Fonts](https://fonts.google.com/)
-* [Italianno](https://fonts.google.com/specimen/Italianno?preview.text_type=custom)
-* [Cormorant](https://fonts.google.com/specimen/Cormorant?preview.text_type=custom)
+* [Italianno](https://fonts.google.com/specimen/Italianno?preview.text_type=custom) is used
+for headings, as I wanted something with a light and ancient feel to it 
+* [Cormorant](https://fonts.google.com/specimen/Cormorant?preview.text_type=custom) is used
+for all other text as I also find this font pretty light but still easy to read
 
 #### Images:
 
@@ -72,8 +74,7 @@ Canon EOS450D. All images are also edited by me.
 
 #### Color: 
 
-*
-*
+I wanted to use colors that match the moon background image.
 
 ![Color palette](assets/images/color-palette.png)
 
