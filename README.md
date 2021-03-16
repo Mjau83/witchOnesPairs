@@ -120,6 +120,10 @@ was used to check that the contrast is ok
 was used to edit photos.
 * [Confetti rain code](https://www.tjejerkodar.se/) are from a mini challange
 by Tjejer Kodar, and was modified to fit the project
+* [Am I Responsive](http://ami.responsivedesign.is/)
+was use to make the mockup
+* [Webformatter](https://webformatter.com/html)
+was used to beautify the code
 * [Gitpod](https://gitpod.io/)
 was used for coding the project
 * [Github](https://github.com/)
