@@ -112,6 +112,10 @@ Balsamiq was used to create the wireframes for this project
  was used to create wireframes in the beginning of the project
 * [Google Fonts](https://fonts.google.com/)
 was used to import the fonts mentioned above in the project
+* [Coolors](https://coolors.co/)
+was used to decide on th colors and to create the color palette
+* [Material.io](https://material.io/)
+was used to check that the contrast is ok
 * [Gimp](https://www.gimp.org/)
 was used to edit photos.
 * [Confetti rain code](https://www.tjejerkodar.se/) are from a mini challange
