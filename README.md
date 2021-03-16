@@ -158,5 +158,8 @@ How make a local clone:
 [Back to top](#table-of-content)
 
 ## Credits
+* Thank you to _Ann-Sofie Appelvik_ in the Holy Crap Community on facebook for helping me to come up with a good name
+for the game/project 
+* 
 
 [Back to top](#table-of-content)
