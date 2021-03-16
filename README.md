@@ -86,10 +86,17 @@ Balsamiq was used to create the wireframes for this project
     * [Index](wireframes/index.png)
     * [Index (match)](wireframes/index-match.png)
     * [Index (all matched)](wireframes/index-all-matched.png)
+    * [About](wireframes/about.png)
+    * [Score](wireframes/score.png)
 * Tablet Wireframes
-    * [image links]
+    * [Index](wireframes/index-tablet.png)
+    * [About](wireframes/about-tablet.png)
+    * [Score](wireframes/score-tablet.png)
+
 * Smartphone Wireframes 
-    * [image links]
+    * [Index](wireframes/index-sp.png)
+    * [About](wireframes/about-sp.png)
+    * [Score](wireframes/score-sp.png)
 
 [Back to top](#table-of-content)
 
