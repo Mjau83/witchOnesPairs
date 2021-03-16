@@ -75,7 +75,7 @@ Canon EOS450D. All images are also edited by me.
 *
 *
 
-![color palette image goes here]
+![Color palette](assets/images/color-palette.png)
 
 [Back to top](#table-of-content)
 
