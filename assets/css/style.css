@@ -16,3 +16,7 @@ body {
     background-size: cover;
     position: relative;
 }
+
+img {
+    width: 200px;
+}
