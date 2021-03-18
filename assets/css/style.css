@@ -17,6 +17,16 @@ body {
     position: relative;
 }
 
+h1 {
+    font-family: 'Italianno', cursive;    
+    color: #f9f5f1;
+}
+
+p {
+    font-family: 'Cormorant', serif;
+    color: #2f3237;
+}
+
 /* Code inspired from freeCodeCamp on YouTube */
 .game {
     width: 650px;
