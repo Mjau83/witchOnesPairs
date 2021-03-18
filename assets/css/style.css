@@ -17,6 +17,26 @@ body {
     position: relative;
 }
 
-img {
-    width: 200px;
+/* Code inspired from freeCodeCamp on YouTube */
+.game {
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid #f9f5f1;
 }
+
+.card {
+    width: 25%;
+    height: 25%;
+    position: relative;
+}
+
+.front-face, .back-face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* End code freeCodeCamp */
+
