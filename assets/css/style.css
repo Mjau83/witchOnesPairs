@@ -17,7 +17,7 @@ body {
     position: relative;
 }
 
-h1 {
+h1, h3 {
     font-family: 'Italianno', cursive;    
     color: #f9f5f1;
 }
