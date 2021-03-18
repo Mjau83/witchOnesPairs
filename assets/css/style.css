@@ -1,1 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600&family=Italianno&display=swap');
+
+* {
+     padding: 0; 
+     margin: 0; 
+     box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+    background: url(/assets/images/background-image.JPG) no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
