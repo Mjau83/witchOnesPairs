@@ -170,6 +170,10 @@ How make a local clone:
 [Back to top](#table-of-content)
 
 ## Credits
+### Inspiration
+Memory card game
+https://youtu.be/ZniVgo8U7ek
+
 * Thank you to _Ann-Sofie Appelvik_ in the Holy Crap Community on facebook for helping me to come up with a good name
 for the game/project 
 * 
