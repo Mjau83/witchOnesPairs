@@ -36,6 +36,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     border: 4px solid #f9f5f1;
+    perspective: 1000px;
 }
 
 .card {
@@ -43,7 +44,8 @@ p {
     height: 25%;
     position: relative;
     transform: scale(1);
-
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 .card:active {
@@ -51,12 +53,22 @@ p {
     transition: transform .2s;
 }
 
+.card.flip {
+    transform: rotateX(180deg);
+}
+
 .front-face, .back-face{
     width: 100%;
     height: 100%;
     padding: 10px;
     position: absolute;
+    backface-visibility: hidden;
 }
+
+.front-face {
+    transform: rotateX(180deg);
+}
+
 
 /* End code freeCodeCamp */
 
