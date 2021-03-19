@@ -8,6 +8,7 @@
 
 body {
     height: 100vh;
+    display: flex;
 /* Make background image responsive */
     background: url(/assets/images/background-image.JPG) no-repeat; 
     -webkit-background-size: cover;
@@ -31,6 +32,7 @@ p {
 .game {
     width: 650px;
     height: 650px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     border: 4px solid #f9f5f1;
@@ -45,6 +47,7 @@ p {
 .front-face, .back-face{
     width: 100%;
     height: 100%;
+    padding: 10px;
     position: absolute;
 }
 
