@@ -1,7 +1,6 @@
 // Code inspired from freeCodeCamp on YouTube
-// Flip card Code
 const cards = document.querySelectorAll('.card');
-
+// Flip card Code
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard; 
@@ -9,7 +8,6 @@ let firstCard, secondCard;
 function filpCard() {
     if(lockBoard) return;
     if(this === firstCard) return;
-
 
   this.classList.add('flip');
   if(!hasFlippedCard){
@@ -24,6 +22,7 @@ function filpCard() {
       firstCard.removeEventListener('click', filpCard)
       secondCard.removeEventListener('click', filpCard)
       resetBoard();
+      alert("It's a match!")
 
     } else {
     lockBoard = true;
