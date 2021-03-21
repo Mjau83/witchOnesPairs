@@ -47,8 +47,14 @@ h5 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;        
+    color: #f9f5f1;
 }
+
+a:hover {
+    color: #907596;
+}
+
 
 .game-info {
     display: flex;
@@ -77,6 +83,10 @@ a {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
+}
+
+.card:hover {
+    background-color: rgba(144, 117, 150, .5);
 }
 
 .card:active {
