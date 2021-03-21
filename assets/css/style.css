@@ -42,6 +42,15 @@ p {
     color: #2f3237;
 }
 
+.game-info {
+    display: flex;
+    justify-content: center;
+}
+
+.game-info h3 {
+    padding: 0 20px;
+}
+
 /* Code inspired from freeCodeCamp on YouTube */
 .game {
     width: 650px;
