@@ -1,9 +1,12 @@
 // Code inspired from freeCodeCamp on YouTube
 const cards = document.querySelectorAll('.card');
+const resultDisplay = document.querySelector('#points')
+
 // Flip card Code
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard; 
+
 
 function filpCard() {
     if(lockBoard) return;
