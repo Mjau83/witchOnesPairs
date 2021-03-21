@@ -42,6 +42,10 @@ p {
     color: #2f3237;
 }
 
+h5 {
+    color: #2f3237;
+}
+
 .game-info {
     display: flex;
     justify-content: center;
@@ -93,3 +97,7 @@ p {
 }
 /* End code freeCodeCamp */
 
+footer {
+    display: flex;
+    justify-content: center;
+}
