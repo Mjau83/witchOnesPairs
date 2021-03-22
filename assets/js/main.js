@@ -1,3 +1,23 @@
+// Add a start game and end game function
+// Add timer. Done. Make it work
+// Add score
+
+var countDownDate = new Date("01:15").getTime();
+
+var myfunc = setInterval(function() {
+var now = new Date().getTime();
+var timeleft = countDownDate - now;
+
+var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+document.getElementsByClassName("secs").innerHTML = seconds + "s " 
+if (timeleft < 0) {
+  clearInterval(myfunc);
+  document.getElementsByClassName("secs").innerHTML = ""
+  document.getElementsByClassName("end").innerHTML = "TIME UP!!";
+}
+}, 1000);
+
 // Code inspired from freeCodeCamp on YouTube
 const cards = document.querySelectorAll('.card');
 const resultDisplay = document.querySelector('#points')
@@ -6,7 +26,6 @@ const resultDisplay = document.querySelector('#points')
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard; 
-
 
 function filpCard() {
     if(lockBoard) return;
@@ -25,7 +44,7 @@ function filpCard() {
       firstCard.removeEventListener('click', filpCard)
       secondCard.removeEventListener('click', filpCard)
       resetBoard();
-      alert("It's a match!")
+      alert("It's a match!")  //Change alert to a something that doesn't need to be clicked, and add individual messages for each match
 
     } else {
     lockBoard = true;

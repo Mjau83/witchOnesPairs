@@ -55,7 +55,6 @@ a:hover {
     color: #907596;
 }
 
-
 .game-info {
     display: flex;
     justify-content: center;
@@ -64,6 +63,7 @@ a:hover {
 .game-info h3 {
     padding: 0 20px;
 }
+
 
 /* Code inspired from freeCodeCamp on YouTube */
 .game {
@@ -87,6 +87,7 @@ a:hover {
 
 .card:hover {
     background-color: rgba(144, 117, 150, .5);
+    border-radius: 17px;
 }
 
 .card:active {
