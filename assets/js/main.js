@@ -1,19 +1,20 @@
 // Add a start game and end game function
-// Add timer. Done. Make it work
+// Add timer. Done. Make it work. Done
 // Add score
 
-
+// Timer code
 var timeleft = 75;
-
+// Code inspired from Stackflow 
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-    document.getElementById("time-left").innerHTML = "Finished";
+    document.getElementById("time-left").innerHTML = "Change this.."; //to a gameover screen
   } else {
     document.getElementById("time-left").innerHTML = timeleft;
   }
   timeleft -= 1;
 }, 1000);
+// End Stackflow code
 
 // Code inspired from freeCodeCamp on YouTube
 const cards = document.querySelectorAll('.card');
@@ -55,6 +56,12 @@ function filpCard() {
   }  
 }
 
+gameOver() {
+      clearInterval(this.countdown);
+      document.getElementById('game-over-text').classList.add('visible');
+}
+
+
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false]
     [firstCard, secondCard] = [null, null]
@@ -68,3 +75,4 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', filpCard));
+// End freeCodeCamp code

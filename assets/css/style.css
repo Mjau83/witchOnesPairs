@@ -112,6 +112,32 @@ a:hover {
 }
 /* End code freeCodeCamp */
 
+
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #f9f5f1;
+  font-family: 'Italianno', cursive; 
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  /* animation: overlay-grow 500ms forwards; */
+}
+
+
 footer {
     display: flex;
     justify-content: center;
