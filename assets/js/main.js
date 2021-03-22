@@ -2,20 +2,17 @@
 // Add timer. Done. Make it work
 // Add score
 
-var countDownDate = new Date("01:15").getTime();
 
-var myfunc = setInterval(function() {
-var now = new Date().getTime();
-var timeleft = countDownDate - now;
+var timeleft = 75;
 
-var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-
-document.getElementsByClassName("secs").innerHTML = seconds + "s " 
-if (timeleft < 0) {
-  clearInterval(myfunc);
-  document.getElementsByClassName("secs").innerHTML = ""
-  document.getElementsByClassName("end").innerHTML = "TIME UP!!";
-}
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("time-left").innerHTML = "Finished";
+  } else {
+    document.getElementById("time-left").innerHTML = timeleft;
+  }
+  timeleft -= 1;
 }, 1000);
 
 // Code inspired from freeCodeCamp on YouTube
