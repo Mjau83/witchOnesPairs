@@ -8,7 +8,7 @@ var timeleft = 75;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-    document.getElementById("time-left").innerHTML = "Change this.."; //to a gameover screen
+    document.getElementById("time-left").innerHTML = "Change this.."; //to call the gameOver function
   } else {
     document.getElementById("time-left").innerHTML = timeleft;
   }
@@ -56,7 +56,7 @@ function filpCard() {
   }  
 }
 
-gameOver() {
+function gameOver() {
       clearInterval(this.countdown);
       document.getElementById('game-over-text').classList.add('visible');
 }

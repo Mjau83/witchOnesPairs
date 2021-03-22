@@ -122,19 +122,19 @@ a:hover {
   bottom: 0;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  /* z-index: 100; */
   color: #f9f5f1;
   font-family: 'Italianno', cursive; 
+  font-size: 50px;
 }
 
 .overlay-text-small {
-  font-size: .3em;
+  font-size: 20px;
 }
 
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
-  /* animation: overlay-grow 500ms forwards; */
 }
 
 
