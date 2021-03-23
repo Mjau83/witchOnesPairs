@@ -132,7 +132,6 @@ a:hover {
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
-
 }
 
 .overlay-text-small {
@@ -140,9 +139,11 @@ a:hover {
 }
 
 
-
-
 footer {
     display: flex;
     justify-content: center;
 }
+
+/* Add media@ for tablet */
+/* Add media@ for smartphone */
+

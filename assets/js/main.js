@@ -2,25 +2,50 @@
 // Add timer. Done. Make it work. Done
 // Add score
 
-// Timer code
-var timeleft = 75;
-// Code inspired from Stackflow 
-var downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-    clearInterval(downloadTimer);
-    document.getElementById("time-left").innerHTML = "Change this.."; //to call the gameOver function
+
+if(document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready();
+}
+
+function ready() {
+    let overlays = Array.from(document.getElementsByClassName('overlay-text'));
+    let cards = Array.from(document.getElementsByClassName('card'));
+
+    overlays.forEach(overlay => {
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('visible');
+            // game.startgame();
+        });
+    });
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            // game.filpCard();
+        });
+    });
+}
+
+
+    // Timer code
+var timeLeft = 75;
+// Code inspired from Stackoverflow 
+var timer = setInterval(function(){
+  if(timeLeft <= 0){
+    clearInterval(timer);
+    document.getElementById("time-left") = gameOver; //to call the gameOver function properly  
   } else {
-    document.getElementById("time-left").innerHTML = timeleft;
+    document.getElementById("time-left").innerHTML = timeLeft;
   }
-  timeleft -= 1;
+  timeLeft -= 1;
 }, 1000);
-// End Stackflow code
+// End Stackoverflow code
 
 // Code inspired from freeCodeCamp on YouTube
 const cards = document.querySelectorAll('.card');
 const resultDisplay = document.querySelector('#points')
 
-// Flip card Code
+    // Flip card Code
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard; 
@@ -37,12 +62,12 @@ function filpCard() {
       hasFlippedCard = false;
       secondCard = this;
 
- // Match card code 
+    // Match card code 
   if(firstCard.dataset.framework === secondCard.dataset.framework) {
       firstCard.removeEventListener('click', filpCard)
       secondCard.removeEventListener('click', filpCard)
       resetBoard();
-      alert("It's a match!")  //Change alert to a something that doesn't need to be clicked, and add individual messages for each match
+      alert("Display angel numbers")  // Add an array of angel numbers that displays randomly for each match
 
     } else {
     lockBoard = true;
@@ -60,7 +85,6 @@ function gameOver() {
       clearInterval(this.countdown);
       document.getElementById('game-over-text').classList.add('visible');
 }
-
 
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false]
