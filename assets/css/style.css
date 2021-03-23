@@ -122,20 +122,24 @@ a:hover {
   bottom: 0;
   justify-content: center;
   align-items: center;
-  /* z-index: 100; */
+  z-index: 100; 
   color: #f9f5f1;
+  background-color: rgba(47, 50, 55, .5);
   font-family: 'Italianno', cursive; 
   font-size: 50px;
-}
-
-.overlay-text-small {
-  font-size: 20px;
 }
 
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
+
 }
+
+.overlay-text-small {
+  font-size: .7em;
+}
+
+
 
 
 footer {
