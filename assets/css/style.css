@@ -9,7 +9,7 @@
 body {
     height: 100vh;
 /* Make background image responsive */
-    background: url(/assets/images/background-image.JPG) no-repeat; 
+    background: url(../images/background-image.JPG) no-repeat; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
