@@ -31,7 +31,7 @@ function ready() {
 var timeLeft = 75;
 // Code inspired from Stackoverflow 
 var timer = setInterval(function(){
-  if(timeLeft <= 0){
+  if(timeLeft <= 0) {
     clearInterval(timer);
     document.getElementById("time-left") = gameOver(); // call the gameOver function properly  
   } else {
@@ -43,7 +43,7 @@ var timer = setInterval(function(){
 
 // Code inspired from freeCodeCamp on YouTube
 const cards = document.querySelectorAll('.card');
-const resultDisplay = document.querySelector('#points')
+const resultDisplay = document.querySelector('#points');
 
     // Flip card Code
 let hasFlippedCard = false;
@@ -64,10 +64,10 @@ function filpCard() {
 
     // Match card code 
   if(firstCard.dataset.framework === secondCard.dataset.framework) {
-      firstCard.removeEventListener('click', filpCard)
-      secondCard.removeEventListener('click', filpCard)
+      firstCard.removeEventListener('click', filpCard);
+      secondCard.removeEventListener('click', filpCard);
       resetBoard();
-      alert("Display angel numbers")  // Add an array of angel numbers that displays randomly for each match
+      alert("Display angel numbers");  // Add an array of angel numbers that displays randomly for each match
 
     } else {
     lockBoard = true;
@@ -82,8 +82,8 @@ function filpCard() {
 }
 
 function gameOver() {
-      clearInterval(this.countdown);
-      document.getElementById('game-over-text').classList.add('visible');
+    clearInterval(this.countdown);
+    document.getElementById('game-over-text').classList.add('visible');
 }
 
 function resetBoard() {
@@ -93,7 +93,7 @@ function resetBoard() {
 
 (function newBoard() {
     cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 16)
+        let randomPos = Math.floor(Math.random() * 16);
         card.style.order = randomPos;
     });
 })();
