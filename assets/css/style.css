@@ -144,6 +144,23 @@ footer {
     justify-content: center;
 }
 
-/* Add media@ for tablet */
-/* Add media@ for smartphone */
+/* Media Queries for Tablet */ 
+@media screen and (max-width:768px){
+
+}
+
+
+/* Media Queries for Smartphone */ 
+@media screen and (max-width:576px){
+    .game {
+    width: 500px;
+    height: 500px;
+    margin: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    }
+
+
+}
 

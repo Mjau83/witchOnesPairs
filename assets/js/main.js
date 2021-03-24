@@ -33,7 +33,7 @@ var timeLeft = 75;
 var timer = setInterval(function(){
   if(timeLeft <= 0){
     clearInterval(timer);
-    document.getElementById("time-left") = gameOver; //to call the gameOver function properly  
+    document.getElementById("time-left") = gameOver(); // call the gameOver function properly  
   } else {
     document.getElementById("time-left").innerHTML = timeLeft;
   }
