@@ -176,5 +176,11 @@ footer {
     margin-left: 7px;
     }
 
+    h3.about {
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    }
+
 }
 
