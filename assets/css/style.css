@@ -22,12 +22,15 @@ h1 {
     color: #f9f5f1;
     font-size: 70px;
     font-weight: 400;
+    margin-left: 50px;
 }
 
 h2 {
     font-family: 'Cormorant', serif;
     color: #2f3237;
     padding-bottom: 20px;
+    margin-left: 50px;
+
 }
 
 h3 {
