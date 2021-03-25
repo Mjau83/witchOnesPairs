@@ -146,13 +146,18 @@ was used to saved and stored on the project after being pushed from Gitpod
 **Lighthouse**
 
 * Test 1
-![Lighthouse test 1]( - - -)
+![Lighthouse test 1](assets/images/lighthouse-test1.png)
 
 ### Bugs
 **Timer** - The countdown timer starts as soon as you enter the site, and not
 when the first card is clicked.  
 
 **Game Over** - The Game Over screen doesn't show up when the time is out.
+
+**White space** - A mysterious white space has appeared to the right and bottom 
+after making the background image responsive for smartphones. It only appears in
+dev tools when the site is previewed with the smartphone frame, but not when the 
+edge is pulled to make the screen smaller.  
 
 
 [Back to top](#table-of-content)
