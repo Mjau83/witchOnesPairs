@@ -126,8 +126,7 @@ was used to decide on th colors and to create the color palette
 was used to check that the contrast is ok
 * [Gimp](https://www.gimp.org/)
 was used to edit photos.
-* [Confetti rain code](https://www.tjejerkodar.se/) are from a mini challange
-by Tjejer Kodar, and was modified to fit the project
+* [Favicon.cc](https://www.favicon.cc/) was used to create the fave icon
 * [Am I Responsive](http://ami.responsivedesign.is/)
 was use to make the mockup
 * [Webformatter](https://webformatter.com/html)
@@ -140,7 +139,20 @@ was used to saved and stored on the project after being pushed from Gitpod
 [Back to top](#table-of-content)
 
 ## Testing
+* [W3C Markup Validator](https://validator.w3.org/)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [JSHint](https://jshint.com/)
+
+**Lighthouse**
+
+* Test 1
+![Lighthouse test 1]( - - -)
+
 ### Bugs
+**Timer** - The countdown timer starts as soon as you enter the site, and not
+when the first card is clicked.  
+
+**Game Over** - The Game Over screen doesn't show up when the time is out.
 
 
 [Back to top](#table-of-content)

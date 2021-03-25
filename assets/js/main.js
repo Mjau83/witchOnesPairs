@@ -81,9 +81,9 @@ function filpCard() {
   }  
 }
 
-function gameOver() {
-    clearInterval(this.countdown);
-    document.getElementById('game-over-text').classList.add('visible');
+ function gameOver() {
+     clearInterval(this.countdown);
+     document.getElementById('game-over-text').classList.add('visible');
 }
 
 function resetBoard() {
