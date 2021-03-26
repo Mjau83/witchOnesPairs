@@ -2,7 +2,60 @@
 // Add timer. Done. Make it work. Done
 // Add score
 
-const cards = document.querySelectorAll('.card');
+document.addEventListener('DOMContentLoaded', ()=>{
+  //List fo cards
+  const cardArray = [
+      {
+          name: 'amethyst',
+          img: 'assets/images/amethyst.jpg'
+      },
+      {
+          name: 'calcite',
+          img: 'assets/images/calcite.jpg'
+      },
+      {
+          name: 'quartz',
+          img: 'assets/images/clear-quartz.jpg'
+      },
+       {
+          name: 'dreamcatcher',
+          img: 'assets/images/dreamcatcher.jpg'
+      },
+      {
+          name: 'moon',
+          img: 'assets/images/moon.jpg'
+      },
+      {
+          name: 'rosequartz',
+          img: 'assets/images/rose-quartz.jpg'
+      },
+      {
+          name: 'sage',
+          img: 'assets/images/sage.jpg'
+      },
+       {
+          name: 'flowers',
+          img: 'assets/images/spring-flowers.jpg'
+      },
+  ]
+  
+  const game = document.querySelector.('.game')
+
+  function createBoard() {
+      for (let i = 0; i < cardArray.length; i++) {
+          let card = document.createElement('img')
+          card.setAttribute('src', 'assets/images/backside-image.jpg')
+          card.setAttribute('data-id', i)
+        //  card.addEventListener('click', flipCard)
+      }
+  }
+
+
+})
+
+
+
+/*const cards = document.querySelectorAll('.card');
 const resultDisplay = document.querySelector('#points');
 let timeLeft = 75;
 let hasFlippedCard = false;
@@ -65,8 +118,7 @@ function filpCard() {
       resetBoard();
       // Change alert to toast
       // Add an array of angel numbers that displays randomly for each match
-      alert("Display angel numbers");  
-
+      alert("Display angel numbers" 
     } else {
     lockBoard = true;
     setTimeout(() => {
@@ -97,4 +149,4 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', filpCard));
-// End freeCodeCamp code
+// End freeCodeCamp code */
