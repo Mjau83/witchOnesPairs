@@ -2,6 +2,13 @@
 // Add timer. Done. Make it work. Done
 // Add score
 
+const cards = document.querySelectorAll('.card');
+const resultDisplay = document.querySelector('#points');
+let timeLeft = 75;
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard;
+let secondCard; 
 
 if(document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
@@ -26,9 +33,7 @@ function ready() {
     });
 }
 
-
     // Timer code
-let timeLeft = 75;
 let timer = setInterval(function(){
   if(timeLeft <= 0) {
     clearInterval(timer);
@@ -40,14 +45,7 @@ let timer = setInterval(function(){
 }, 1000);
 
 // Code inspired from freeCodeCamp on YouTube
-const cards = document.querySelectorAll('.card');
-const resultDisplay = document.querySelector('#points');
-
     // Flip card Code
-let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard, secondCard; 
-
 function filpCard() {
     if(lockBoard) return;
     if(this === firstCard) return;
