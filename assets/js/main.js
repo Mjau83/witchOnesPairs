@@ -28,9 +28,8 @@ function ready() {
 
 
     // Timer code
-var timeLeft = 75;
-// Code inspired from Stackoverflow 
-var timer = setInterval(function(){
+let timeLeft = 75;
+let timer = setInterval(function(){
   if(timeLeft <= 0) {
     clearInterval(timer);
     document.getElementById("time-left") = gameOver(); // call the gameOver function properly  
@@ -39,7 +38,6 @@ var timer = setInterval(function(){
   }
   timeLeft -= 1;
 }, 1000);
-// End Stackoverflow code
 
 // Code inspired from freeCodeCamp on YouTube
 const cards = document.querySelectorAll('.card');
@@ -67,7 +65,9 @@ function filpCard() {
       firstCard.removeEventListener('click', filpCard);
       secondCard.removeEventListener('click', filpCard);
       resetBoard();
-      alert("Display angel numbers");  // Add an array of angel numbers that displays randomly for each match
+      // Change alert to toast
+      // Add an array of angel numbers that displays randomly for each match
+      alert("Display angel numbers");  
 
     } else {
     lockBoard = true;
