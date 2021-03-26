@@ -158,6 +158,9 @@ when the first card is clicked.
 after making the background image responsive for smartphones. It only appears in
 dev tools when the site is previewed with the smartphone frame, but not when the 
 edge is pulled to make the screen smaller.  
+1. Tried to add a negative margin-right, but that also adds some space when it's not
+previewed with the smartphone frame.
+
 
 
 [Back to top](#table-of-content)
