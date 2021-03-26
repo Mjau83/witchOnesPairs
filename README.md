@@ -160,8 +160,8 @@ dev tools when the site is previewed with the smartphone frame, but not when the
 edge is pulled to make the screen smaller.  
 1. Tried to add a negative margin-right, but that also adds some space when it's not
 previewed with the smartphone frame.
-
-
+2. Removed background position-x from media queries for smartphone. Still got a white space.
+3. Also remived it from media queries for tablet. The white space is gone!
 
 [Back to top](#table-of-content)
 
