@@ -169,7 +169,10 @@ footer {
 
 /* Media Queries for Smartphone */ 
 @media screen and (max-width:576px){
-    
+    body {
+        background-size: auto;
+    }   
+     
     .game {
     width: 500px;
     height: 500px;
