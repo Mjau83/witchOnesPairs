@@ -7,35 +7,35 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const cardArray = [
       {
           name: 'amethyst',
-          img: 'assets/images/amethyst.jpg'
+        //   img: 'assets/images/amethyst.jpg'
       },
       {
           name: 'calcite',
-          img: 'assets/images/calcite.jpg'
+        //   img: 'assets/images/calcite.jpg'
       },
       {
-          name: 'quartz',
-          img: 'assets/images/clear-quartz.jpg'
+          name: 'clear-quartz',
+        //   img: 'assets/images/clear-quartz.jpg'
       },
        {
           name: 'dreamcatcher',
-          img: 'assets/images/dreamcatcher.jpg'
+        //   img: 'assets/images/dreamcatcher.jpg'
       },
       {
           name: 'moon',
-          img: 'assets/images/moon.jpg'
+        //   img: 'assets/images/moon.jpg'
       },
       {
-          name: 'rosequartz',
-          img: 'assets/images/rose-quartz.jpg'
+          name: 'rose-quartz',
+        //   img: 'assets/images/rose-quartz.jpg'
       },
       {
           name: 'sage',
-          img: 'assets/images/sage.jpg'
+        //   img: 'assets/images/sage.jpg'
       },
        {
-          name: 'flowers',
-          img: 'assets/images/spring-flowers.jpg'
+          name: 'spring-flowers',
+        //   img: 'assets/images/spring-flowers.jpg'
       },
   ]
   
@@ -52,6 +52,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
   }
   createBoard()
 
+  listOfCards.forEach(card => {
+  let html = ` <div class="card col" data-framework="${card.name}">
+            <img class="front-face img-fluid" src="assets/images/${card.name}.jpg" alt="Picture of ${card.name}">
+            <img class="back-face img-fluid" src="assets/images/backside-image.jpg" alt="memory card backside">
+        </div>`
+  console.log(html)
+  })
 
 
 })

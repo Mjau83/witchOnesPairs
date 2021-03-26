@@ -80,6 +80,11 @@ a:hover {
     perspective: 1000px;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 .card {
     width: 25%;
     height: 25%;
