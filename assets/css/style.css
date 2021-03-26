@@ -151,10 +151,6 @@ footer {
 /* Media Queries for Tablet */ 
 @media screen and (max-width:768px){
     
-    body { 
-    background-position-x: right; 
-    } 
-
     .game {
     width: 580px;
     height: 580px;
@@ -174,10 +170,6 @@ footer {
 /* Media Queries for Smartphone */ 
 @media screen and (max-width:576px){
     
-    body { 
-    background-position-x: right; 
-    } 
-
     .game {
     width: 500px;
     height: 500px;
