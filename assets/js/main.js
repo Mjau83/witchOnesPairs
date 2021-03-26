@@ -39,16 +39,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
       },
   ]
   
-  const game = document.querySelector.('.game')
+  const grid = document.querySelector('.grid')
 
   function createBoard() {
       for (let i = 0; i < cardArray.length; i++) {
-          let card = document.createElement('img')
+          const card = document.createElement('img')
           card.setAttribute('src', 'assets/images/backside-image.jpg')
           card.setAttribute('data-id', i)
         //  card.addEventListener('click', flipCard)
-      }
+        grid.appendChild(card)
+    } 
   }
+  createBoard()
+
 
 
 })
