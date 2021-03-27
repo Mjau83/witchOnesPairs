@@ -37,31 +37,34 @@ document.addEventListener('DOMContentLoaded', ()=>{
           name: 'spring-flowers',
         //   img: 'assets/images/spring-flowers.jpg'
       },
-  ]
+  ];
   
-  const grid = document.querySelector('.grid')
+  const gridRef = document.querySelector('#grid');
 
   function createBoard() {
       for (let i = 0; i < cardArray.length; i++) {
-          const card = document.createElement('img')
-          card.setAttribute('src', 'assets/images/backside-image.jpg')
-          card.setAttribute('data-id', i)
+          const card = document.createElement('img');
+          card.setAttribute('src', 'assets/images/backside-image.jpg');
+          card.setAttribute('data-id', i);
         //  card.addEventListener('click', flipCard)
-        grid.appendChild(card)
+        gridRef.appendChild(card);
     } 
   }
-  createBoard()
+  createBoard();
 
-  listOfCards.forEach(card => {
-  let html = ` <div class="card col" data-framework="${card.name}">
-            <img class="front-face img-fluid" src="assets/images/${card.name}.jpg" alt="Picture of ${card.name}">
-            <img class="back-face img-fluid" src="assets/images/backside-image.jpg" alt="memory card backside">
-        </div>`
-  console.log(html)
-  })
+  cardArray.forEach((card => {
+    let html = `<div col-sm-3>
+      <div class="card" data-framework="${card.name}">
+        <img class="front-face img-fluid" src="assets/images/${card.name}.jpg" alt="Picture of ${card.name}">
+        <img class="back-face img-fluid" src="assets/images/backside-image.jpg" alt="memory card backside">
+      </div>
+      </div>`;
+    gridRef.insertAdjacentHTML("beforeEnd", html);
+
+}));
 
 
-})
+});
 
 
 

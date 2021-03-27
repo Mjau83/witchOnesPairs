@@ -70,9 +70,9 @@ a:hover {
 
 
 /* Code inspired from freeCodeCamp on YouTube */
-.grid {
-    width: 650px;
-    height: 650px;
+#grid {
+    /* width: 650px; */
+    height: 650px; 
     margin: auto; 
     display: flex;
     flex-wrap: wrap;
@@ -80,14 +80,14 @@ a:hover {
     perspective: 1000px;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
+.img-fluid { 
+    max-width: 100%; 
+    height: auto; 
+} 
 
 .card {
-    width: 25%;
-    height: 25%;
+    /* width: 25%;  */
+    /* height: 25%; */
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
