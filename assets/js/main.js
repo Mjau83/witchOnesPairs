@@ -66,16 +66,8 @@
   let lockBoard = false;
   let firstCard;
   let secondCard; 
-
-  function createBoard() {
-      for (let i = 0; i < cardArray.length; i++) {
-          const card = document.createElement('img');
-          card.setAttribute('data-id', i);
-        gridRef.appendChild(card);
-    } 
-  }
-  createBoard();
-
+  
+  // Game board
   cardArray.forEach((card => {
     let html = `<div class="col-3">
       <div class="card" data-framework="${card.name}">
@@ -115,7 +107,7 @@ function gameTimer(){
   console.log("Game timer running");
   if(timeLeft < 0){
     clearInterval(timer);
-  document.getElementById("time-left") = gameOver(); // call the gameOver function properly
+ // document.getElementById("time-left") = gameOver(); 
   clearInterval(this.countdown);
   document.getElementById('game-over-text').classList.add('visible');
   } else {
@@ -129,6 +121,11 @@ function gameTimer(){
     // Flip card Code
 
 function filpCard() {
+    if(tStarted===false){
+    tStarted=true;
+    timer = setInterval(gameTimer,1000);
+    console.log("first card, starts game timer");
+  }
     if(lockBoard) return;
     if(this === firstCard) return;
 
