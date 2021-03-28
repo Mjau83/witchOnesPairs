@@ -8,7 +8,6 @@
 
 body {
     height: 100vh;
-/* Make background image responsive */
     background: url(../images/background-image.JPG) no-repeat; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -86,8 +85,6 @@ a:hover {
 } 
 
 .card {
-    /* width: 25%;  */
-    /* height: 25%; */
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
@@ -104,9 +101,9 @@ a:hover {
     transition: transform .2s;
 }
 
-.card.flip {
-    transform: rotateX(180deg);
-}
+.card.flip{  
+    transform: rotateX(180deg);   
+}  
 
 .front-face, .back-face{
     width: 100%;

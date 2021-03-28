@@ -2,14 +2,22 @@
 // Add timer. Done. Make it work. Done
 // Add score
 
-document.addEventListener('DOMContentLoaded', ()=>{
   //List fo cards
   const cardArray = [
       {
           name: 'amethyst',
       },
       {
+          name: 'amethyst',
+      },
+      {
           name: 'calcite',
+      },
+      {
+          name: 'calcite',
+      },
+      {
+          name: 'clear-quartz',
       },
       {
           name: 'clear-quartz',
@@ -18,7 +26,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
           name: 'dreamcatcher',
       },
       {
+          name: 'dreamcatcher',
+      },
+      {
           name: 'moon',
+      },
+      {
+          name: 'moon',
+      },
+      {
+          name: 'rose-quartz',
       },
       {
           name: 'rose-quartz',
@@ -26,18 +43,30 @@ document.addEventListener('DOMContentLoaded', ()=>{
       {
           name: 'sage',
       },
+      {
+          name: 'sage',
+      },
        {
+          name: 'spring-flowers',
+      },
+      {
           name: 'spring-flowers',
       },
   ];
   
-  const gridRef = document.querySelector('#grid');
+  const gridRef = document.querySelector('#grid') 
+  const cards = document.querySelectorAll('.card');
+  const resultDisplay = document.querySelector('#points');
+  let timeLeft = 75;
+  let hasFlippedCard = false;
+  let lockBoard = false;
+  let firstCard;
+  let secondCard; 
 
   function createBoard() {
       for (let i = 0; i < cardArray.length; i++) {
           const card = document.createElement('img');
           card.setAttribute('data-id', i);
-        //  card.addEventListener('click', flipCard)
         gridRef.appendChild(card);
     } 
   }
@@ -54,19 +83,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 }));
 
-
-});
-
-
-
-/*const cards = document.querySelectorAll('.card');
-const resultDisplay = document.querySelector('#points');
-let timeLeft = 75;
-let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard;
-let secondCard; 
-
 if(document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -80,15 +96,14 @@ function ready() {
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-            // game.startgame();
+             gridRef.startgame();
         });
     });
     cards.forEach(card => {
-        card.addEventListener('click', () => {
-            // game.filpCard();
-        });
+        card.addEventListener('click', filpCard); 
     });
 }
+
 
     // Timer code
 let timer = setInterval(function(){
@@ -103,6 +118,7 @@ let timer = setInterval(function(){
 
 // Code inspired from freeCodeCamp on YouTube
     // Flip card Code
+
 function filpCard() {
     if(lockBoard) return;
     if(this === firstCard) return;
@@ -122,7 +138,7 @@ function filpCard() {
       resetBoard();
       // Change alert to toast
       // Add an array of angel numbers that displays randomly for each match
-      alert("Display angel numbers" 
+      alert("Display angel numbers"); 
     } else {
     lockBoard = true;
     setTimeout(() => {
@@ -142,7 +158,7 @@ function filpCard() {
 
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false]
-    [firstCard, secondCard] = [null, null]
+    [firstCard, secondCard] = [null, null];
 }
 
 (function newBoard() {
@@ -153,4 +169,4 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', filpCard));
-// End freeCodeCamp code */
+// End freeCodeCamp code 
