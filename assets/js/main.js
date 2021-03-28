@@ -7,35 +7,27 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const cardArray = [
       {
           name: 'amethyst',
-        //   img: 'assets/images/amethyst.jpg'
       },
       {
           name: 'calcite',
-        //   img: 'assets/images/calcite.jpg'
       },
       {
           name: 'clear-quartz',
-        //   img: 'assets/images/clear-quartz.jpg'
       },
        {
           name: 'dreamcatcher',
-        //   img: 'assets/images/dreamcatcher.jpg'
       },
       {
           name: 'moon',
-        //   img: 'assets/images/moon.jpg'
       },
       {
           name: 'rose-quartz',
-        //   img: 'assets/images/rose-quartz.jpg'
       },
       {
           name: 'sage',
-        //   img: 'assets/images/sage.jpg'
       },
        {
           name: 'spring-flowers',
-        //   img: 'assets/images/spring-flowers.jpg'
       },
   ];
   
@@ -44,7 +36,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
   function createBoard() {
       for (let i = 0; i < cardArray.length; i++) {
           const card = document.createElement('img');
-          card.setAttribute('src', 'assets/images/backside-image.jpg');
           card.setAttribute('data-id', i);
         //  card.addEventListener('click', flipCard)
         gridRef.appendChild(card);
@@ -53,7 +44,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   createBoard();
 
   cardArray.forEach((card => {
-    let html = `<div col-sm-3>
+    let html = `<div class="col-3">
       <div class="card" data-framework="${card.name}">
         <img class="front-face img-fluid" src="assets/images/${card.name}.jpg" alt="Picture of ${card.name}">
         <img class="back-face img-fluid" src="assets/images/backside-image.jpg" alt="memory card backside">
