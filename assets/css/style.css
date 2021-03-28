@@ -70,7 +70,7 @@ a:hover {
 
 /* Code inspired from freeCodeCamp on YouTube */
 #grid {
-    /* width: 650px; */
+    width: 650px; 
     height: 650px; 
     margin: auto; 
     display: flex;
@@ -102,7 +102,7 @@ a:hover {
 }
 
 .card.flip{  
-    transform: rotateX(180deg);   
+    transform: rotateY(180deg);   
 }  
 
 .front-face, .back-face{
@@ -114,10 +114,9 @@ a:hover {
 }
 
 .front-face {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 /* End code freeCodeCamp */
-
 
 .overlay-text {
   display: none;
