@@ -58,14 +58,16 @@
   const cards = document.querySelectorAll('.card');
   const resultDisplay = document.querySelector('#points');
 
-  var tStarted=false;
-  var timer;
+  let tStarted=false;
+  let timer;
   let timeLeft = 75;
 
   let hasFlippedCard = false;
   let lockBoard = false;
   let firstCard;
   let secondCard; 
+
+  let score = 0;
   
   // Game board
   cardArray.forEach((card => {
@@ -92,7 +94,7 @@ function ready() {
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-             gridRef.startgame();
+            // gridRef.startgame();
         });
     });
     cards.forEach(card => {
@@ -109,7 +111,7 @@ function gameTimer(){
     clearInterval(timer);
  // document.getElementById("time-left") = gameOver(); 
   clearInterval(this.countdown);
-  document.getElementById('game-over-text').classList.add('visible');
+  document.getElementById("game-over-text").classList.add('visible');
   } else {
     document.getElementById("time-left").innerHTML = timeLeft;
   }
