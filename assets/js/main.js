@@ -54,6 +54,10 @@
       },
   ];
   
+  const messageArray = [
+      
+  ]
+
   const gridRef = document.querySelector('#grid') 
   const cards = document.querySelectorAll('.card');
   const resultDisplay = document.querySelector('#points');
@@ -61,12 +65,10 @@
   let tStarted=false;
   let timer;
   let timeLeft = 75;
-
   let hasFlippedCard = false;
   let lockBoard = false;
   let firstCard;
   let secondCard; 
-
   let score = 0;
   
   // Game board
@@ -79,7 +81,6 @@
       </div>`;
     gridRef.insertAdjacentHTML("beforeEnd", html);
 
-}));
 
 if(document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
@@ -94,7 +95,7 @@ function ready() {
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-            // gridRef.startgame();
+            gridRef.startgame();
         });
     });
     cards.forEach(card => {
@@ -144,6 +145,8 @@ function filpCard() {
       firstCard.removeEventListener('click', filpCard);
       secondCard.removeEventListener('click', filpCard);
       resetBoard();
+      score += 10;
+      document.getElementById("points").innerHTML = score;
       // Change alert to toast
       // Add an array of angel numbers that displays randomly for each match
       alert("Display angel numbers"); 
