@@ -57,7 +57,11 @@
   const gridRef = document.querySelector('#grid') 
   const cards = document.querySelectorAll('.card');
   const resultDisplay = document.querySelector('#points');
+
+  var tStarted=false;
+  var timer;
   let timeLeft = 75;
+
   let hasFlippedCard = false;
   let lockBoard = false;
   let firstCard;
@@ -106,15 +110,20 @@ function ready() {
 
 
     // Timer code
-let timer = setInterval(function(){
-  if(timeLeft <= 0) {
+function gameTimer(){
+  tStarted=true;
+  console.log("Game timer running");
+  if(timeLeft < 0){
     clearInterval(timer);
-    document.getElementById("time-left") = gameOver(); // call the gameOver function properly  
+  document.getElementById("time-left") = gameOver(); // call the gameOver function properly
+  clearInterval(this.countdown);
+  document.getElementById('game-over-text').classList.add('visible');
   } else {
     document.getElementById("time-left").innerHTML = timeLeft;
   }
   timeLeft -= 1;
-}, 1000);
+}
+
 
 // Code inspired from freeCodeCamp on YouTube
     // Flip card Code
