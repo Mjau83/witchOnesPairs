@@ -179,7 +179,7 @@ footer {
         background-size: auto;
     }   
      
-    .game {
+    #grid {
     width: 500px;
     height: 500px;
     margin: auto; 
