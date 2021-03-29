@@ -8,54 +8,57 @@
           name: 'amethyst',
       },
       {
-          name: 'amethyst',
+        //   name: 'amethyst',
       },
       {
           name: 'calcite',
       },
       {
-          name: 'calcite',
+        //   name: 'calcite',
       },
       {
           name: 'clear-quartz',
       },
       {
-          name: 'clear-quartz',
+        //   name: 'clear-quartz',
       },
        {
           name: 'dreamcatcher',
       },
       {
-          name: 'dreamcatcher',
+        //   name: 'dreamcatcher',
       },
       {
           name: 'moon',
       },
       {
-          name: 'moon',
+        //   name: 'moon',
       },
       {
           name: 'rose-quartz',
       },
       {
-          name: 'rose-quartz',
+        //   name: 'rose-quartz',
       },
       {
           name: 'sage',
       },
       {
-          name: 'sage',
+        //   name: 'sage',
       },
        {
           name: 'spring-flowers',
       },
       {
-          name: 'spring-flowers',
+        //   name: 'spring-flowers',
       },
   ];
-    listOfCards.sort(() => 0.5 - Math.random());  
+     listOfCards.sort(() => 0.5 - Math.random());  
+  for (let i = 0; i < listOfCards.length * 2; i++) {
+      const element = listOfCards[i];
+  }
   
-// Fix, only randomizes when the game starts, not with every match
+// Fix, only randomizes when the game starts, not with every match. Done
   const messageList = [
       "111 Intuition - Litsen to you heart, your intuition is manifesting",
       "222 Alignmet - You are at the right place at the right time",
@@ -137,7 +140,10 @@ function gameTimer(){
   timeLeft -= 1;
 }
 
-
+function randomMessage() {
+    const randomNumber = Math.floor(Math.random() * messageList.length);
+    return messageList[randomNumber];
+}
 // Code inspired from freeCodeCamp on YouTube
     // Flip card Code
 
@@ -171,7 +177,7 @@ function filpCard() {
       Swal.fire({
       position: 'top-end',
       // Fix messageArray so it only shows one value. Done
-      text: (messageList[messageIndex]),
+      text: randomMessage(), 
       showConfirmButton: false,
       timer: 2500
       });
