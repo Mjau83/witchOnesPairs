@@ -68,7 +68,9 @@
       "1111 - You are on the right path",
       "000 - It's time for new beginnings",
   ];
-    messageArray.sort(() => 0.5 - Math.random());
+   messageArray.sort(() => 0.5 * Math.random());
+   let messageIndex = Math.floor(Math.random() * messageArray.length);
+    
 
   const gridRef = document.querySelector('#grid');
   const cards = document.querySelectorAll('.card');
@@ -81,6 +83,9 @@
   let lockBoard = false;
   let firstCard;
   let secondCard; 
+  let cardsWon = [];
+  let cardsPicked = [];
+  let cardsPickedId = []; 
   let score = 0;
   
   
@@ -114,6 +119,7 @@ function ready() {
     cards.forEach(card => {
         card.addEventListener('click', filpCard); 
     });
+    
 }
     // Timer code
 function gameTimer(){
@@ -161,13 +167,12 @@ function filpCard() {
       // Add an array of angel numbers that displays randomly for each match. Done
       Swal.fire({
       position: 'top-end',
-      // Fix messageArray so it only shows one value
-      text: [messageArray],
+      // Fix messageArray so it only shows one value. Done
+      text: (messageArray[messageIndex]),
       showConfirmButton: false,
       timer: 2500
       });
-     // if(cardArray.length === .length)
-      winner();
+      cardsWon.push(cardsPicked)
     } else {
     lockBoard = true;
     setTimeout(() => {
@@ -176,6 +181,11 @@ function filpCard() {
         lockBoard = false;
         resetBoard();
     }, 1500);
+    }
+    cardsPicked = []
+    cardsPickedId = []
+    if (cardsWon.length === cardArray.length/2) {
+        winner(); 
     }
   }  
 }
@@ -193,6 +203,7 @@ function winner() {
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
+     
 }
 
 // End freeCodeCamp code 
