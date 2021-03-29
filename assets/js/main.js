@@ -1,6 +1,6 @@
-// Add a start game and end game function
+// Add a start game and end game function. Done
 // Add timer. Done. Make it work. Done
-// Add score
+// Add score. Done
 
   //List fo cards
   const cardArray = [
@@ -55,6 +55,7 @@
   ];
     cardArray.sort(() => 0.5 - Math.random());  
   
+// Fix, only randomizes when the game starts, not with every match
   const messageArray = [
       "111 Intuition - Litsen to you heart, your intuition is manifesting",
       "222 Alignmet - You are at the right place at the right time",
@@ -68,9 +69,9 @@
       "1111 - You are on the right path",
       "000 - It's time for new beginnings",
   ];
-   messageArray.sort(() => 0.5 * Math.random());
+   //messageArray.sort(() => 0.5 * Math.random());
    let messageIndex = Math.floor(Math.random() * messageArray.length);
-    
+
 
   const gridRef = document.querySelector('#grid');
   const cards = document.querySelectorAll('.card');
@@ -129,6 +130,7 @@ function gameTimer(){
     clearInterval(timer);
   clearInterval(this.countdown);
   document.getElementById("game-over-text").classList.add('visible');
+  //Fix Start game again
   } else {
     document.getElementById("time-left").innerHTML = timeLeft;
   }
@@ -163,6 +165,7 @@ function filpCard() {
       resetBoard();
       score += 10;
       document.getElementById("points").innerHTML = score;
+    messageArray.sort(() => 0.5 * Math.random());
       // Change alert to toast. Done
       // Add an array of angel numbers that displays randomly for each match. Done
       Swal.fire({
@@ -172,7 +175,7 @@ function filpCard() {
       showConfirmButton: false,
       timer: 2500
       });
-      cardsWon.push(cardsPicked)
+      cardsWon.push(cardsPicked);
     } else {
     lockBoard = true;
     setTimeout(() => {
@@ -182,10 +185,11 @@ function filpCard() {
         resetBoard();
     }, 1500);
     }
-    cardsPicked = []
-    cardsPickedId = []
+    cardsPicked = [];
+    cardsPickedId = [];
     if (cardsWon.length === cardArray.length/2) {
         winner(); 
+// Fix Stop timer
     }
   }  
 }
