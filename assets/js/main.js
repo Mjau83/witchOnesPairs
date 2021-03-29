@@ -53,7 +53,7 @@
           name: 'spring-flowers',
       },
   ];
-    cardArray.sort(() => 0.5 - Math.random())  
+    cardArray.sort(() => 0.5 - Math.random());  
   
   const messageArray = [
       "111 Intuition - Litsen to you heart, your intuition is manifesting",
@@ -68,7 +68,7 @@
       "1111 - You are on the right path",
       "000 - It's time for new beginnings",
   ];
-    messageArray.sort(() => 0.5 - Math.random())
+    messageArray.sort(() => 0.5 - Math.random());
 
   const gridRef = document.querySelector('#grid');
   const cards = document.querySelectorAll('.card');
@@ -121,7 +121,6 @@ function gameTimer(){
   console.log("Game timer running");
   if(timeLeft < 0){
     clearInterval(timer);
- // document.getElementById("time-left") = gameOver(); 
   clearInterval(this.countdown);
   document.getElementById("game-over-text").classList.add('visible');
   } else {
@@ -159,14 +158,16 @@ function filpCard() {
       score += 10;
       document.getElementById("points").innerHTML = score;
       // Change alert to toast. Done
-      // Add an array of angel numbers that displays randomly for each match
-      //alert("Display angel numbers"); 
+      // Add an array of angel numbers that displays randomly for each match. Done
       Swal.fire({
       position: 'top-end',
+      // Fix messageArray so it only shows one value
       text: [messageArray],
       showConfirmButton: false,
       timer: 2500
-    })
+      });
+     // if(cardArray.length === .length)
+      winner();
     } else {
     lockBoard = true;
     setTimeout(() => {
@@ -184,17 +185,14 @@ function gameOver() {
      document.getElementById('game-over-text').classList.add('visible');
 }
 
+function winner() {
+    clearInterval(this.countdown);
+    document.getElementById('winner-text').classList.add('visible');
+}
+
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
-(function newBoard() {
-    cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 16);
-        card.style.order = randomPos;
-    });
-})();
-
-cards.forEach(card => card.addEventListener('click', filpCard));
 // End freeCodeCamp code 
