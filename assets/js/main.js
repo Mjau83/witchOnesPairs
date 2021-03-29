@@ -53,12 +53,24 @@
           name: 'spring-flowers',
       },
   ];
-  
-  const messageArray = [
-      
-  ]
 
-  const gridRef = document.querySelector('#grid') 
+    cardArray.sort(() => 0.5 - Math.random())  
+  /*
+  const messageArray = [
+      "111 Intuition - Litsen to you heart, your intuition is manifesting",
+      "222 Alignmet - You are at the right place at the right time",
+      "333 Support - Your spirit guides are around you",
+      "444 Protection - You are protected by the universe",
+      "555 Change - Change is comming your way, trust the process",
+      "666 Reflect - It's time to reflectand reconnect with your spiritual truth",
+      "777 Luck - Wonderful things are comming your way, keep it up",
+      "888 Balance - Everything is falling into place",
+      "999 Release - Let go of the what no longer serves you",
+      "1111 - You are on the right path",
+      "000 - It's time for new beginnings",
+  ];
+*/
+  const gridRef = document.querySelector('#grid');
   const cards = document.querySelectorAll('.card');
   const resultDisplay = document.querySelector('#points');
 
@@ -71,6 +83,7 @@
   let secondCard; 
   let score = 0;
   
+  
   // Game board
   cardArray.forEach((card => {
     let html = `<div class="col-3">
@@ -80,7 +93,7 @@
       </div>
       </div>`;
     gridRef.insertAdjacentHTML("beforeEnd", html);
-
+  }));
 
 if(document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
@@ -95,7 +108,7 @@ function ready() {
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-            gridRef.startgame();
+           // gridRef.startgame();
         });
     });
     cards.forEach(card => {
@@ -124,8 +137,8 @@ function gameTimer(){
     // Flip card Code
 
 function filpCard() {
-    if(tStarted===false){
-    tStarted=true;
+    if(tStarted === false){
+    tStarted = true;
     timer = setInterval(gameTimer,1000);
     console.log("first card, starts game timer");
   }
@@ -162,13 +175,13 @@ function filpCard() {
   }  
 }
 
- function gameOver() {
+function gameOver() {
      clearInterval(this.countdown);
      document.getElementById('game-over-text').classList.add('visible');
 }
 
 function resetBoard() {
-    [hasFlippedCard, lockBoard] = [false, false]
+    [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
@@ -179,5 +192,5 @@ function resetBoard() {
     });
 })();
 
-cards.forEach(card => card.addEventListener('click', filpCard));
+//cards.forEach(card => card.addEventListener('click', filpCard));
 // End freeCodeCamp code 
