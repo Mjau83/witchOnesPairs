@@ -53,7 +53,6 @@
           name: 'spring-flowers',
       },
   ];
-
     cardArray.sort(() => 0.5 - Math.random())  
   
   const messageArray = [
@@ -164,7 +163,7 @@ function filpCard() {
       //alert("Display angel numbers"); 
       Swal.fire({
       position: 'top-end',
-      text: 'Add random messageArray ',
+      text: [messageArray],
       showConfirmButton: false,
       timer: 2500
     })
