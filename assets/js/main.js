@@ -8,52 +8,53 @@
           name: 'amethyst',
       },
       {
-        //   name: 'amethyst',
+           name: 'amethyst',
       },
       {
           name: 'calcite',
       },
       {
-        //   name: 'calcite',
+           name: 'calcite',
       },
       {
           name: 'clear-quartz',
       },
       {
-        //   name: 'clear-quartz',
+           name: 'clear-quartz',
       },
        {
           name: 'dreamcatcher',
       },
       {
-        //   name: 'dreamcatcher',
+           name: 'dreamcatcher',
       },
       {
           name: 'moon',
       },
       {
-        //   name: 'moon',
+           name: 'moon',
       },
       {
           name: 'rose-quartz',
       },
       {
-        //   name: 'rose-quartz',
+           name: 'rose-quartz',
       },
       {
           name: 'sage',
       },
       {
-        //   name: 'sage',
+           name: 'sage',
       },
        {
           name: 'spring-flowers',
       },
       {
-        //   name: 'spring-flowers',
+           name: 'spring-flowers',
       },
   ];
-     listOfCards.sort(() => 0.5 - Math.random());  
+//Fix for loop and remove half the cards  
+  listOfCards.sort(() => 0.5 - Math.random());  
   for (let i = 0; i < listOfCards.length * 2; i++) {
       const element = listOfCards[i];
   }
@@ -72,7 +73,6 @@
       "1111 - You are on the right path",
       "000 - It's time for new beginnings",
   ];
-   //messageArray.sort(() => 0.5 * Math.random());
    let messageIndex = Math.floor(Math.random() * messageList.length);
 
 
@@ -117,7 +117,6 @@ function ready() {
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-           // gridRef.startgame();
         });
     });
     cards.forEach(card => {
@@ -133,7 +132,7 @@ function gameTimer(){
     clearInterval(timer);
   clearInterval(this.countdown);
   document.getElementById("game-over-text").classList.add('visible');
-  //Fix Start game again
+//Fix Start game again
   } else {
     document.getElementById("time-left").innerHTML = timeLeft;
   }
@@ -171,12 +170,11 @@ function filpCard() {
       resetBoard();
       score += 10;
       document.getElementById("points").innerHTML = score;
-    messageList.sort(() => 0.5 * Math.random());
       // Change alert to toast. Done
       // Add an array of angel numbers that displays randomly for each match. Done
       Swal.fire({
       position: 'top-end',
-      // Fix messageArray so it only shows one value. Done
+// Fix messageArray so it only shows one value. Done
       text: randomMessage(), 
       showConfirmButton: false,
       timer: 2500
