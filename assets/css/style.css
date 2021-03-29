@@ -143,6 +143,9 @@ a:hover {
   font-size: .7em;
 }
 
+.about {
+    color: #f9f5f1;
+}
 
 footer {
     display: flex;

@@ -55,7 +55,7 @@
   ];
 
     cardArray.sort(() => 0.5 - Math.random())  
-  /*
+  
   const messageArray = [
       "111 Intuition - Litsen to you heart, your intuition is manifesting",
       "222 Alignmet - You are at the right place at the right time",
@@ -69,7 +69,8 @@
       "1111 - You are on the right path",
       "000 - It's time for new beginnings",
   ];
-*/
+    messageArray.sort(() => 0.5 - Math.random())
+
   const gridRef = document.querySelector('#grid');
   const cards = document.querySelectorAll('.card');
   const resultDisplay = document.querySelector('#points');
@@ -108,7 +109,7 @@ function ready() {
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-            gridRef.startgame();
+           // gridRef.startgame();
         });
     });
     cards.forEach(card => {
@@ -158,12 +159,12 @@ function filpCard() {
       resetBoard();
       score += 10;
       document.getElementById("points").innerHTML = score;
-      // Change alert to toast
+      // Change alert to toast. Done
       // Add an array of angel numbers that displays randomly for each match
       //alert("Display angel numbers"); 
       Swal.fire({
       position: 'top-end',
-      title: '111 Intuition - Litsen to you heart, your intuition is manifesting',
+      text: 'Add random messageArray ',
       showConfirmButton: false,
       timer: 2500
     })
