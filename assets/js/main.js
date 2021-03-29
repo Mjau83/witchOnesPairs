@@ -108,15 +108,13 @@ function ready() {
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-           // gridRef.startgame();
+            gridRef.startgame();
         });
     });
     cards.forEach(card => {
         card.addEventListener('click', filpCard); 
     });
 }
-
-
     // Timer code
 function gameTimer(){
   tStarted=true;
@@ -162,7 +160,13 @@ function filpCard() {
       document.getElementById("points").innerHTML = score;
       // Change alert to toast
       // Add an array of angel numbers that displays randomly for each match
-      alert("Display angel numbers"); 
+      //alert("Display angel numbers"); 
+      Swal.fire({
+      position: 'top-end',
+      title: '111 Intuition - Litsen to you heart, your intuition is manifesting',
+      showConfirmButton: false,
+      timer: 2500
+    })
     } else {
     lockBoard = true;
     setTimeout(() => {
@@ -192,5 +196,5 @@ function resetBoard() {
     });
 })();
 
-//cards.forEach(card => card.addEventListener('click', filpCard));
+cards.forEach(card => card.addEventListener('click', filpCard));
 // End freeCodeCamp code 
