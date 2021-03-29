@@ -3,7 +3,7 @@
 // Add score. Done
 
   //List fo cards
-  const cardArray = [
+  const listOfCards = [
       {
           name: 'amethyst',
       },
@@ -53,10 +53,10 @@
           name: 'spring-flowers',
       },
   ];
-    cardArray.sort(() => 0.5 - Math.random());  
+    listOfCards.sort(() => 0.5 - Math.random());  
   
 // Fix, only randomizes when the game starts, not with every match
-  const messageArray = [
+  const messageList = [
       "111 Intuition - Litsen to you heart, your intuition is manifesting",
       "222 Alignmet - You are at the right place at the right time",
       "333 Support - Your spirit guides are around you",
@@ -70,7 +70,7 @@
       "000 - It's time for new beginnings",
   ];
    //messageArray.sort(() => 0.5 * Math.random());
-   let messageIndex = Math.floor(Math.random() * messageArray.length);
+   let messageIndex = Math.floor(Math.random() * messageList.length);
 
 
   const gridRef = document.querySelector('#grid');
@@ -91,8 +91,8 @@
   
   
   // Game board
-  cardArray.forEach((card => {
-    let html = `<div class="col-3">
+  listOfCards.forEach((card => {
+    let html = `<div class="col-sm-3 col-md-3 col-lg-3">
       <div class="card" data-framework="${card.name}">
         <img class="front-face img-fluid" src="assets/images/${card.name}.jpg" alt="Picture of ${card.name}">
         <img class="back-face img-fluid" src="assets/images/backside-image.jpg" alt="memory card backside">
@@ -165,13 +165,13 @@ function filpCard() {
       resetBoard();
       score += 10;
       document.getElementById("points").innerHTML = score;
-    messageArray.sort(() => 0.5 * Math.random());
+    messageList.sort(() => 0.5 * Math.random());
       // Change alert to toast. Done
       // Add an array of angel numbers that displays randomly for each match. Done
       Swal.fire({
       position: 'top-end',
       // Fix messageArray so it only shows one value. Done
-      text: (messageArray[messageIndex]),
+      text: (messageList[messageIndex]),
       showConfirmButton: false,
       timer: 2500
       });
@@ -187,7 +187,7 @@ function filpCard() {
     }
     cardsPicked = [];
     cardsPickedId = [];
-    if (cardsWon.length === cardArray.length/2) {
+    if (cardsWon.length === listOfCards.length/2) {
         winner(); 
 // Fix Stop timer
     }
