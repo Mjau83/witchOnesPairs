@@ -112,7 +112,6 @@ a:hover {
 .front-face,
 .back-face {
     width: 100%;
-
     position: absolute;
     backface-visibility: hidden;
 }

@@ -3,61 +3,42 @@
 // Add score. Done
 
 //List fo cards
-const listOfCards = [
+const imageList = [
     {
-        name: "amethyst",
+           name: 'amethyst',
     },
     {
-        //           name: 'amethyst',
+           name: 'calcite',
     },
     {
-        name: "calcite",
+           name: 'clear-quartz',
     },
     {
-        //           name: 'calcite',
+           name: 'dreamcatcher',
     },
     {
-        name: "clear-quartz",
+               name: 'moon',
     },
     {
-        //           name: 'clear-quartz',
+           name: 'rose-quartz',
     },
     {
-        name: "dreamcatcher",
+           name: 'sage',
     },
     {
-        //           name: 'dreamcatcher',
-    },
-    {
-        name: "moon",
-    },
-    {
-        //           name: 'moon',
-    },
-    {
-        name: "rose-quartz",
-    },
-    {
-        //           name: 'rose-quartz',
-    },
-    {
-        name: "sage",
-    },
-    {
-        //           name: 'sage',
-    },
-    {
-        name: "spring-flowers",
-    },
-    {
-        //           name: 'spring-flowers',
+           name: 'spring-flowers',
     },
 ];
-//Fix for loop and remove half the cards
+//Fix for loop and remove half the cards. Done
+let listOfCards = new Array();
+let imageIndex = 0 ;
+for (let i = 0; i < imageList.length; i++) {
+    listOfCards[imageIndex] = imageList[i];
+    listOfCards[imageIndex +1] = imageList[i];
+    imageIndex += 2;
+};
+
 listOfCards.sort(() => 0.5 - Math.random());
-for (let i = 0; i < listOfCards.length * 2; i++) {
-    // const element = listOfCards[i];
-}
 
 // Fix, only randomizes when the game starts, not with every match. Done
 const messageList = [
@@ -97,7 +78,7 @@ listOfCards.forEach((card) => {
         <img class="front-face img-fluid" src="assets/images/${card.name}.jpg" alt="Picture of ${card.name}">
         <img class="back-face img-fluid" src="assets/images/backside-image.jpg" alt="memory card backside">
       </div>
-      </div>`;
+    </div>`;
     gridRef.insertAdjacentHTML("beforeEnd", html);
 });
 
@@ -187,7 +168,7 @@ function filpCard() {
         }
         cardsPicked = [];
         cardsPickedId = [];
-        if (cardsWon.length === listOfCards.length / 2) {
+        if (cardsWon.length === imageList.length) {
             winner();
             // Fix Stop timer
         }
@@ -209,6 +190,7 @@ function gameOver() {
 }
 
 function winner() {
+    clearInterval(timer);
     clearInterval(this.countdown);
     document.getElementById("winner-text").classList.add("visible");
 }
