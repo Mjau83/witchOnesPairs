@@ -108,6 +108,7 @@ function gameTimer() {
     if (timeLeft < 0) {
         clearInterval(timer);
         clearInterval(this.countdown);
+        lockBoard = true;
         document.getElementById("game-over-text").classList.add("visible");
         //Fix Start game again
     } else {
@@ -169,8 +170,10 @@ function filpCard() {
         cardsPicked = [];
         cardsPickedId = [];
         if (cardsWon.length === imageList.length) {
+            tStarted = false;
+            clearInterval(timer);
             winner();
-            // Fix Stop timer
+            // Fix Stop timer. Done
         }
     }
 }
@@ -190,7 +193,6 @@ function gameOver() {
 }
 
 function winner() {
-    clearInterval(timer);
     clearInterval(this.countdown);
     document.getElementById("winner-text").classList.add("visible");
 }
