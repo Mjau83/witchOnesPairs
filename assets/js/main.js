@@ -73,7 +73,7 @@
       "1111 - You are on the right path",
       "000 - It's time for new beginnings",
   ];
-   let messageIndex = Math.floor(Math.random() * messageList.length);
+  // let messageIndex = Math.floor(Math.random() * messageList.length);
 
 
   const gridRef = document.querySelector('#grid');
@@ -95,7 +95,7 @@
   
   // Game board
   listOfCards.forEach((card => {
-    let html = `<div class="col-sm-3 col-md-3 col-lg-3">
+    let html = `<div class="col-sm-3 col-3">
       <div class="card" data-framework="${card.name}">
         <img class="front-face img-fluid" src="assets/images/${card.name}.jpg" alt="Picture of ${card.name}">
         <img class="back-face img-fluid" src="assets/images/backside-image.jpg" alt="memory card backside">
