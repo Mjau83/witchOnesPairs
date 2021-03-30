@@ -8,56 +8,56 @@
           name: 'amethyst',
       },
       {
-           name: 'amethyst',
+//           name: 'amethyst',
       },
       {
-          name: 'calcite',
+        name: 'calcite',
       },
       {
-           name: 'calcite',
+//           name: 'calcite',
       },
       {
           name: 'clear-quartz',
       },
       {
-           name: 'clear-quartz',
+//           name: 'clear-quartz',
       },
        {
           name: 'dreamcatcher',
       },
       {
-           name: 'dreamcatcher',
+//           name: 'dreamcatcher',
       },
       {
           name: 'moon',
       },
       {
-           name: 'moon',
+//           name: 'moon',
       },
       {
           name: 'rose-quartz',
       },
       {
-           name: 'rose-quartz',
+//           name: 'rose-quartz',
       },
       {
           name: 'sage',
       },
       {
-           name: 'sage',
+//           name: 'sage',
       },
        {
           name: 'spring-flowers',
       },
       {
-           name: 'spring-flowers',
+//           name: 'spring-flowers',
       },
   ];
 //Fix for loop and remove half the cards  
   listOfCards.sort(() => 0.5 - Math.random());  
   for (let i = 0; i < listOfCards.length * 2; i++) {
-      const element = listOfCards[i];
-  }
+     const element = listOfCards[i];
+  };
   
 // Fix, only randomizes when the game starts, not with every match. Done
   const messageList = [
@@ -198,20 +198,28 @@ function filpCard() {
   }  
 }
 
+/*
+function winner(cardsWon) {
+    clearInterval(this.countdown);
+document.querySelector(`#${cardsWon}`).classList.add('visible');
+}
+winner('winner-text');
+winner('game-over-text');
+*/
+
 function gameOver() {
      clearInterval(this.countdown);
      document.getElementById('game-over-text').classList.add('visible');
 }
-
+/*
 function winner() {
     clearInterval(this.countdown);
     document.getElementById('winner-text').classList.add('visible');
 }
-
+*/
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
-     
 }
 
 // End freeCodeCamp code 

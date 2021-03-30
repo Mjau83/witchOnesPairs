@@ -89,6 +89,8 @@ a:hover {
     position: relative;
     height: 87%;
     justify-content: center;
+    background-color: transparent;
+    border: none
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
