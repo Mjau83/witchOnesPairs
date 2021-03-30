@@ -240,11 +240,19 @@ How make a local clone:
 
 ## Credits
 ### Inspiration
-Memory card game
-https://youtu.be/ZniVgo8U7ek
+* [freeCodeCamp](https://youtu.be/ZniVgo8U7ek)
+* [Code with Ania Kubów](https://www.youtube.com/watch?v=tjyDOHzKN0w)
+* [PortEXE  ](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=2746s)
+* [Modal ](https://www.w3schools.com/howto/howto_css_modals.asp)
 
-* Thank you to _Ann-Sofie Appelvik_ in the Holy Crap Community on facebook for helping me to come up with a good name
-for the game/project 
-* 
+
+* Thank you to Ann-Sofie Appelvik in the Holy Crap Community on facebook for helping me to 
+come up with a good name for the game/project
+* A huge thank you to my mentor Simen Eventyret_mentor for all the good advices, feedback 
+and most of all patience.
+* Thank you to my older brother David who’s been a wonderful support in me deepest times of 
+dispear and helped me with testing and good advices to help me get a better understanding for the code.
+You're the best!
+
 
 [Back to top](#table-of-content)
