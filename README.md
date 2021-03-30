@@ -115,26 +115,24 @@ Balsamiq was used to create the wireframes for this project
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-#### Frameworks Libraries Programs
-* [Balsamic](https://balsamiq.com)
- was used to create wireframes in the beginning of the project
-* [Google Fonts](https://fonts.google.com/)
-was used to import the fonts mentioned above in the project
-* [Coolors](https://coolors.co/)
-was used to decide on th colors and to create the color palette
-* [Material.io](https://material.io/)
-was used to check that the contrast is ok
-* [Gimp](https://www.gimp.org/)
-was used to edit photos.
+
+#### Frameworks and Libraries 
+* [Google Fonts](https://fonts.google.com/) was used to import the fonts mentioned above 
+in the project
+* [Coolors](https://coolors.co/) was used to decide on th colors and to create the color 
+palette
+* [Am I Responsive](http://ami.responsivedesign.is/) was use to make the mockup
+
+#### Tools
+* [Balsamic](https://balsamiq.com) was used to create wireframes in the beginning of 
+the project
+* [Material.io](https://material.io/) was used to check that the contrast is ok
+* [Gimp](https://www.gimp.org/) was used to edit photos.
 * [Favicon.cc](https://www.favicon.cc/) was used to create the fave icon
-* [Am I Responsive](http://ami.responsivedesign.is/)
-was use to make the mockup
-* [Webformatter](https://webformatter.com/html)
-was used to beautify the code
-* [Gitpod](https://gitpod.io/)
-was used for coding the project
-* [Github](https://github.com/)
-was used to saved and stored on the project after being pushed from Gitpod
+* [Webformatter](https://webformatter.com/html) was used to beautify the code
+* [Gitpod](https://gitpod.io/) was used for coding the project
+* [Github](https://github.com/) was used to saved and stored on the project after being 
+pushed from Gitpod
 
 [Back to top](#table-of-content)
 
