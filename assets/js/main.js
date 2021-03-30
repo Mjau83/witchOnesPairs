@@ -56,7 +56,7 @@
 //Fix for loop and remove half the cards  
   listOfCards.sort(() => 0.5 - Math.random());  
   for (let i = 0; i < listOfCards.length * 2; i++) {
-     const element = listOfCards[i];
+     // const element = listOfCards[i];
   };
   
 // Fix, only randomizes when the game starts, not with every match. Done
@@ -73,8 +73,6 @@
       "1111 - You are on the right path",
       "000 - It's time for new beginnings",
   ];
-  // let messageIndex = Math.floor(Math.random() * messageList.length);
-
 
   const gridRef = document.querySelector('#grid');
   const cards = document.querySelectorAll('.card');
@@ -170,11 +168,11 @@ function filpCard() {
       resetBoard();
       score += 10;
       document.getElementById("points").innerHTML = score;
-      // Change alert to toast. Done
-      // Add an array of angel numbers that displays randomly for each match. Done
+    // Change alert to toast. Done
+    // Add an array of angel numbers that displays randomly for each match. Done
       Swal.fire({
       position: 'top-end',
-// Fix messageArray so it only shows one value. Done
+    // Fix messageArray so it only shows one value. Done
       text: randomMessage(), 
       showConfirmButton: false,
       timer: 2500
