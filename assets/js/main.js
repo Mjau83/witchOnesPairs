@@ -62,14 +62,20 @@ const resultDisplay = document.querySelector("#points");
 let tStarted = false;
 let timer;
 let timeLeft = 75;
+
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard;
 let secondCard;
+
 let cardsWon = [];
 let cardsPicked = [];
 let cardsPickedId = [];
 let score = 0;
+
+var modal = document.getElementById("aboutModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
 
 // Game board
 listOfCards.forEach((card) => {
@@ -193,11 +199,8 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 // End freeCodeCamp code
-//Modal Code
-var modal = document.getElementById("aboutModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
 
+//Modal Code
 btn.onclick = function() {
   modal.style.display = "block";
 }

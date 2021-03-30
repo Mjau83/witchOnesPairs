@@ -49,10 +49,10 @@ h5 {
     color: #2f3237;
 }
 
-a {
-    text-decoration: none;
+ a {
     color: #f9f5f1;
-}
+    text-decoration: none;
+ }
 
 a:hover {
     color: #907596;
@@ -146,39 +146,45 @@ a:hover {
     font-size: 0.7em;
 }
 
-.about {
-    color: #f9f5f1;
-}
-
-
-
-/* The Modal (background) */
+/* About Modal  */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #907596;
+  color: #f9f5f1;
+  background-color: rgba(144, 117, 150, .5);
+  font-size: 25px;
   margin: auto;
+  justify-content: center;
   padding: 20px;
-  border: 1px solid #2f3237;
-  width: 80%;
+  border: 3px solid #2f3237;
+  border-radius: 15px;
+  width: 60%;
 }
 
-/* The Close Button */
+.modal-content p {
+     color: #f9f5f1; 
+}
+
+.fa-moon{
+    display: flex;
+    justify-content: center;
+}
+
 .close {
-  color: #665e6e;
+  color: #dadada;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -186,13 +192,21 @@ a:hover {
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  color: #f9f5f1;
+  text-decoration: none; 
 }
 
-
-
+/* About Button */
+#myBtn {
+    color: #f9f5f1;
+    background-color: #907596;
+    font-family: "Italianno", cursive;
+    font-size: 28px;
+    padding: 2px 17px 0px 15px;
+    margin-top: 15px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
 
 footer {
     display: flex;
@@ -209,11 +223,16 @@ footer {
         flex-wrap: wrap;
     }
 
-    h3.about {
-        padding-top: 15px;
+    button {
         justify-content: center;
         display: flex;
     }
+
+    #myBtn {
+    margin-top: 15px;
+    justify-content: center;
+    display: flex;
+    } 
 }
 
 /* Media Queries for Smartphone */
@@ -241,9 +260,12 @@ footer {
         margin-left: 7px;
     }
 
-    h3.about {
-        font-size: 25px;
-        justify-content: center;
-        display: flex;
+    .modal-content {
+        width: 80%;
     }
+
+    #myBtn {
+    justify-content: center;
+    display: flex;
+    } 
 }
