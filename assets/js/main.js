@@ -178,15 +178,6 @@ function filpCard() {
     }
 }
 
-/*
-function winner(cardsWon) {
-    clearInterval(this.countdown);
-document.querySelector(`#${cardsWon}`).classList.add('visible');
-}
-winner('winner-text');
-winner('game-over-text');
-*/
-
 function gameOver() {
     clearInterval(this.countdown);
     document.getElementById("game-over-text").classList.add("visible");
@@ -201,5 +192,22 @@ function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
-
 // End freeCodeCamp code
+//Modal Code
+var modal = document.getElementById("aboutModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
