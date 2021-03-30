@@ -160,18 +160,18 @@ footer {
 /* Media Queries for Tablet */ 
 @media screen and (max-width:768px){
     
-    .game {
+    #grid {
     width: 580px;
-    height: 580px;
+    height: 580px; 
     margin: auto; 
     display: flex;
     flex-wrap: wrap;
     }
 
     h3.about {
+    padding-top: 15px;
     justify-content: center;
     display: flex;
-    padding-top: 10px;
     }
 }
 

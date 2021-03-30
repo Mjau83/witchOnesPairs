@@ -149,19 +149,54 @@ was used to saved and stored on the project after being pushed from Gitpod
 ![Lighthouse test 1](assets/images/lighthouse-test1.png)
 
 ### Bugs
-**Timer** - The countdown timer starts as soon as you enter the site, and not
-when the first card is clicked.  
+* **Bug**
+
+The countdown timer starts as soon as the user enters the site, and it runs in 
+the background behind the overlay-text class and not when the first card is 
+clicked.
+
+* **Fix**
+
+I created a function called gameTimer() instead of using inline coding. Then a 
+variable for starting the timer called let tStarted was created and set to false 
+since I don’t want it to run. Within the gameTimer() function tStarted is set 
+to true as I want the timer to be running within the function. Console.log() 
+to be able to see that it works. To be able to start the timer when a card is 
+flipped I added an if statement in flipCard(), and within that if statement 
+set tStarted to true.
+
+
+* **Verdict**
+
+The timer now runs when the first card is clicked
+
 
 **Game Over** - The Game Over screen doesn't show up when the time is out.
+* **Bug**
+* **Fix**
+* **Verdict**
 
-**White space** - A mysterious white space has appeared to the right and bottom 
-after making the background image responsive for smartphones. It only appears in
-dev tools when the site is previewed with the smartphone frame, but not when the 
-edge is pulled to make the screen smaller.  
-1. Tried to add a negative margin-right, but that also adds some space when it's not
-previewed with the smartphone frame.
-2. Removed background position-x from media queries for smartphone. Still got a white space.
-3. Also remived it from media queries for tablet. The white space is gone!
+**White space**  
+* **Bug** 
+
+A mysterious white space has appeared to the right and bottom after making 
+the background image responsive for smartphones and tablet so that the moon 
+in the background image is visible on all screens. It only appears in dev 
+tools when the site is previewed with the smartphone frame, but not when the 
+edge is pulled to make the screen smaller.
+
+* **Fix**
+
+Tried to add a negative margin-right, but that also adds some space when it's 
+not previewed with the smartphone frame. Removed background position-x from 
+media queries for smartphone. Still got a white space. After talking to my 
+mentor *Simen Eventyret_mentor* it was decided that it wasn’t a priority so I also 
+removed it from media queries for tablet. The white space is gone!
+
+* **Verdict**
+
+The white space is now gone
+
 
 [Back to top](#table-of-content)
 
