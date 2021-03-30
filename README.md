@@ -217,15 +217,19 @@ contrast better.
 ### GitHub Pages
 How to deploy project using Github pages:
 
-1. Go to [Github](https://github.com/)
-2. Log in and find the repository
-3. Find the "Settings" (with a gear icon)
-4. Scroll down on the page until you find the "Github Pages" section
-5. Under "Source" you'll find a dropdown which is set to "none"
-6. Change it to "Master"
-7. Then click the save button
-8. Scroll back down to "Github Pages" 
-9. A green alert box will now tell you that your site been published and provide you a link to the site.
+1. Go to Github
+2. Log in and click on “Repositories” tab in the top middle of the screen
+3. Choose this repository
+4. Click on the "Settings" tab (with a gear icon)
+5. Scroll down on the page until you find the "Github Pages" section
+6. Under "Source" you'll find a dropdown which is set to "none"
+7. Change it to "Master"
+8. Then click the save button. This will reload the page.
+9. Scroll back down to "Github Pages"
+10. A green alert box will now tell you that your site been published and provide you a link to the site.
+
+![Deployment Image](assets/images/deployment.png)
+
 
 How make a local clone:
 1. Locate the repository
