@@ -171,9 +171,15 @@ set tStarted to true.
 The timer now runs when the first card is clicked
 
 
-**Game Over** - The Game Over screen doesn't show up when the time is out.
+**Game Over** 
+
 * **Bug**
+
+The Game Over screen doesn't show up when the time is out, and the user 
+can continue to flip cards.
 * **Fix**
+
+
 * **Verdict**
 
 **White space**  
@@ -195,7 +201,14 @@ removed it from media queries for tablet. The white space is gone!
 
 * **Verdict**
 
-The white space is now gone
+Even if the moon in the background image isn't showing the white space is gone. And 
+the part of the image that is showing on a mobile screen is the darker area and that work good
+too since it makes the text and the cards stand out more on the small screen which makes the
+contrast better.
+
+* **Bug**
+* **Fix**
+* **Verdict**
 
 
 [Back to top](#table-of-content)
