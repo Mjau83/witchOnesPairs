@@ -1,7 +1,7 @@
 # Witch Ones Pairs?
 ### ~ A magical memory game for the modern Witch ~
 
-![ Mock up images goes here ]
+![Responsive Image](assets/images/responsive-image.png)
 
 ## Project Goals
 **What is it?** 
@@ -380,8 +380,15 @@ the part of the image that is showing on a mobile screen is the darker area and 
 too since it makes the text and the cards stand out more on the small screen which makes the
 contrast better.
 
+**Reload Game**
 * **Bug**
+
+After winning or losing the game it can only be reloaded to play again by reloading
+the entire site.
+
 * **Fix**
+
+
 * **Verdict**
 
 
