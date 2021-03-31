@@ -1,4 +1,3 @@
-
 //List fo cards
 const imageList = [
     {
@@ -36,7 +35,7 @@ for (let i = 0; i < imageList.length; i++) {
 }
 
 listOfCards.sort(() => 0.5 - Math.random());
-
+// List of pop up messages
 const messageList = [
     "111 Intuition - Litsen to you heart, your intuition is manifesting",
     "222 Alignmet - You are at the right place at the right time",
@@ -156,6 +155,7 @@ function filpCard() {
             });
             cardsWon.push(cardsPicked);
         } else {
+            // No match
             lockBoard = true;
             setTimeout(() => {
                 firstCard.classList.remove("flip");
@@ -164,6 +164,7 @@ function filpCard() {
                 resetBoard();
             }, 1500);
         }
+        // All matched
         cardsPicked = [];
         cardsPickedId = [];
         if (cardsWon.length === imageList.length) {
