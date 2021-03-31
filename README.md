@@ -136,6 +136,11 @@ pushed from Gitpod
 [Back to top](#table-of-content)
 
 ## Testing
+
+The was tested for Android on Samsung A50 and Xperia 10. It was also tested on laptop
+and desktop view.
+
+The code was tested with:
 * [W3C Markup Validator](https://validator.w3.org/)
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * [JSHint](https://jshint.com/)
@@ -388,9 +393,15 @@ the entire site.
 
 * **Fix**
 
+At the moment of deploying the site I haven't been able to squash this bug.
+To be sure that the user isn't left hanging I added a message on the Congratulations
+and Game Over screen that tells the user to _"Reload the page to do another ritual!"_
+
 
 * **Verdict**
 
+This is not my prefered solution to solved this, but it's still possible
+to play the game again and the user is noted on how to do it.
 
 [Back to top](#table-of-content)
 
