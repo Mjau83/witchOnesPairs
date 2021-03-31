@@ -38,10 +38,8 @@ and gives them small rewards along the way.
 ## UX
 
 ### User Goals
-* The should be responsive so that it looks good and works on well on desktops,
+* The game should be responsive so that it looks good and works on well on desktops,
 tablets and smartphones
-* The user should be able to choose on what kind of level they want to play
-Baby Witch (easy), Medium (medium) or ... (hard)
 * The user should get positive feedback when cards are matched
 * The game should have the estetics that is appeling to the spiritual community
 
@@ -70,7 +68,7 @@ for all other text as I also find this font pretty light but still easy to read
 #### Images:
 
 All images are my own and is taken by me using eihter my Sony Xperia or my 
-Canon EOS450D. All images are also edited by me.
+Canon EOS450D. All images are also edited by me using Gimp.
 
 #### Color: 
 
@@ -121,6 +119,7 @@ in the project
 palette
 * [Am I Responsive](http://ami.responsivedesign.is/) was use to make the mockup
 * [SweetAlert 2](https://sweetalert2.github.io/) was used to make the alert message 
+* [Boostrap](https://getbootstrap.com/) was used to make the site responsive
 
 ### Tools
 * [Balsamic](https://balsamiq.com) was used to create wireframes in the beginning of 
@@ -131,15 +130,15 @@ the project
 * [Webformatter](https://webformatter.com/html) was used to beautify the code
 * [Copressor.io](https://compressor.io/) was used to compress the background image
 * [Gitpod](https://gitpod.io/) was used for coding the project
-* [Github](https://github.com/) was used to saved and stored on the project after being 
-pushed from Gitpod
+* [Github](https://github.com/) was used to save and stored on the project after being 
+pushed from Gitpod. Github was also use to deploy the site
 
 [Back to top](#table-of-content)
 
 ## Testing
 
 The was tested for Android on Samsung A50 and Xperia 10. It was also tested on laptop
-and desktop view.
+and desktop view (PC).
 
 The code was tested with:
 * [W3C Markup Validator](https://validator.w3.org/)
@@ -409,7 +408,7 @@ to play the game again and the user is noted on how to do it.
 
 ## To Do
 * Add other levels of difficulty so the user can choose on what level to start playing
-* Make a new score function that uses both the time used until win and the amount of flips
+* Make a new score function that uses both the time used until win and the number of flips
 used to get a greater variation of the score points
 * Store the top user scores in a highscore so users can compare and compete
 * Apply a confetti rain on top of the winner screen when all cards are matched
