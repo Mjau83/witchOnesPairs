@@ -29,7 +29,7 @@ and gives them small rewards along the way.
     * [Languages](#languages)
     * [Frameworks Libraries Programs](#frameworks-libraries-programs)
 * [**Testing**](#testing)
-    * [Buggs](#buggs)
+    * [Bugs](#bugs)
 * [**Deployment**](#deployment)
     * [GitHub Pages](#gitHub-pages)
 * [**Credits**](#credits)
@@ -108,12 +108,12 @@ Balsamiq was used to create the wireframes for this project
 [Back to top](#table-of-content)
 
 ## Technologies Used
-#### Languages
+### Languages
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-#### Frameworks and Libraries 
+### Frameworks and Libraries 
 * [Google Fonts](https://fonts.google.com/) was used to import the fonts mentioned above 
 in the project
 * [Coolors](https://coolors.co/) was used to decide on th colors and to create the color 
@@ -121,7 +121,7 @@ palette
 * [Am I Responsive](http://ami.responsivedesign.is/) was use to make the mockup
 * [SweetAlert 2](https://sweetalert2.github.io/) was used to make the alert message 
 
-#### Tools
+### Tools
 * [Balsamic](https://balsamiq.com) was used to create wireframes in the beginning of 
 the project
 * [Material.io](https://material.io/) was used to check that the contrast is ok
@@ -143,14 +143,17 @@ pushed from Gitpod
 **Lighthouse**
 
 * Test 1
+
 ![Lighthouse test 1](assets/images/lighthouse-test1.png)
 * Test 2
+
 ![Lighthouse test 1](assets/images/lighthouse-test2.png)
 * Test 3 ( test is run after the background image  was changed to a compressed image. )
+
 ![Lighthouse test 1](assets/images/lighthouse-test3.png)
 
 
-### User Stories
+## User Stories
 **As a user I want to, know when I have a match**
 
 * Plan
@@ -414,7 +417,7 @@ How make a local clone:
 [Back to top](#table-of-content)
 
 ## Credits
-### Inspiration
+#### Inspiration for the game
 * [freeCodeCamp](https://youtu.be/ZniVgo8U7ek)
 * [Code with Ania Kubów](https://www.youtube.com/watch?v=tjyDOHzKN0w)
 * [PortEXE  ](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=2746s)
