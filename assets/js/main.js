@@ -117,7 +117,7 @@ function gameTimer() {
     }
     timeLeft -= 1;
 }
-
+// Message code
 function randomMessage() {
     const randomNumber = Math.floor(Math.random() * messageList.length);
     return messageList[randomNumber];

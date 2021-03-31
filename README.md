@@ -30,6 +30,7 @@ and gives them small rewards along the way.
     * [Frameworks Libraries Programs](#frameworks-libraries-programs)
 * [**Testing**](#testing)
     * [Bugs](#bugs)
+    * [To Do](#to-do)
 * [**Deployment**](#deployment)
     * [GitHub Pages](#gitHub-pages)
 * [**Credits**](#credits)
@@ -393,15 +394,25 @@ the entire site.
 
 * **Fix**
 
+I tried to create a function for reloading the game. The function need to flip all the 
+cards back, shuffle them, unlock the board, and reset the timer and score. 
 At the moment of deploying the site I haven't been able to squash this bug.
 To be sure that the user isn't left hanging I added a message on the Congratulations
 and Game Over screen that tells the user to _"Reload the page to do another ritual!"_
-
 
 * **Verdict**
 
 This is not my prefered solution to solved this, but it's still possible
 to play the game again and the user is noted on how to do it.
+
+[Back to top](#table-of-content)
+
+## To Do
+* Add other levels of difficulty so the user can choose on what level to start playing
+* Make a new score function that uses both the time used until win and the amount of flips
+used to get a greater variation of the score points
+* Store the top user scores in a highscore so users can compare and compete
+* Apply a confetti rain on top of the winner screen when all cards are matched
 
 [Back to top](#table-of-content)
 
