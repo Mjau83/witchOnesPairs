@@ -122,6 +122,7 @@ in the project
 * [Coolors](https://coolors.co/) was used to decide on th colors and to create the color 
 palette
 * [Am I Responsive](http://ami.responsivedesign.is/) was use to make the mockup
+* [SweetAlert 2](https://sweetalert2.github.io/) was used to make the alert message 
 
 #### Tools
 * [Balsamic](https://balsamiq.com) was used to create wireframes in the beginning of 

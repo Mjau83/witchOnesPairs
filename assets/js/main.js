@@ -1,6 +1,3 @@
-// Add a start game and end game function. Done
-// Add timer. Done. Make it work. Done
-// Add score. Done
 
 //List fo cards
 const imageList = [
@@ -29,18 +26,17 @@ const imageList = [
            name: 'spring-flowers',
     },
 ];
-//Fix for loop and remove half the cards. Done
+
 let listOfCards = new Array();
 let imageIndex = 0 ;
 for (let i = 0; i < imageList.length; i++) {
     listOfCards[imageIndex] = imageList[i];
     listOfCards[imageIndex +1] = imageList[i];
     imageIndex += 2;
-};
+}
 
 listOfCards.sort(() => 0.5 - Math.random());
 
-// Fix, only randomizes when the game starts, not with every match. Done
 const messageList = [
     "111 Intuition - Litsen to you heart, your intuition is manifesting",
     "222 Alignmet - You are at the right place at the right time",
@@ -116,7 +112,6 @@ function gameTimer() {
         clearInterval(this.countdown);
         lockBoard = true;
         document.getElementById("game-over-text").classList.add("visible");
-        //Fix Start game again
     } else {
         document.getElementById("time-left").innerHTML = timeLeft;
     }
@@ -127,9 +122,8 @@ function randomMessage() {
     const randomNumber = Math.floor(Math.random() * messageList.length);
     return messageList[randomNumber];
 }
-// Code inspired from freeCodeCamp on YouTube
-// Flip card Code
 
+// Flip card Code
 function filpCard() {
     if (tStarted === false) {
         tStarted = true;
@@ -154,11 +148,8 @@ function filpCard() {
             resetBoard();
             score += 10;
             document.getElementById("points").innerHTML = score;
-            // Change alert to toast. Done
-            // Add an array of angel numbers that displays randomly for each match. Done
             Swal.fire({
                 position: "top-end",
-                // Fix messageArray so it only shows one value. Done
                 text: randomMessage(),
                 showConfirmButton: false,
                 timer: 2500,
@@ -179,7 +170,6 @@ function filpCard() {
             tStarted = false;
             clearInterval(timer);
             winner();
-            // Fix Stop timer. Done
         }
     }
 }
@@ -198,19 +188,18 @@ function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
-// End freeCodeCamp code
 
 //Modal Code
 btn.onclick = function() {
   modal.style.display = "block";
-}
+};
 
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};

@@ -67,8 +67,7 @@ a:hover {
 .game-info h3 {
     padding: 0 20px;
 }
-
-/* Code inspired from freeCodeCamp on YouTube */
+/* Game Board */
 #grid {
     width: 650px;
     height: 650px;
@@ -119,8 +118,8 @@ a:hover {
 .front-face {
     transform: rotateY(180deg);
 }
-/* End code freeCodeCamp */
 
+/* Screens */
 .overlay-text {
     display: none;
     position: fixed;
@@ -161,7 +160,7 @@ a:hover {
   background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content */
+/* Content */
 .modal-content {
   color: #f9f5f1;
   background-color: rgba(144, 117, 150, .5);
@@ -196,7 +195,7 @@ a:hover {
   text-decoration: none; 
 }
 
-/* About Button */
+/* Button */
 #myBtn {
     color: #f9f5f1;
     background-color: #907596;
