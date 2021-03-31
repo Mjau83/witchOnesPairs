@@ -45,12 +45,11 @@ Baby Witch (easy), Medium (medium) or ... (hard)
 * The game should have the estetics that is appeling to the spiritual community
 
 ### User Stories
-* As a user I want to, be able to choose on what level of difficulty I want to start 
+
 * As a user I want to, know when I have a match
 * As a user I want to, know when all cards are matched
 * As a user I want to, know how to play 
 * As a user I want to, track my score
-* As a user I want to, compare my score to other players
 * As a user I want to, navigate the site with ease
 
 ### Site Owner Goals
@@ -104,9 +103,7 @@ Balsamiq was used to create the wireframes for this project
 ## Features
 * Responsive on different devices
 * A spiritual message for every matched pair of cards
-* A congratulations message and a confetti rain when all cards are matched
-* Ability to choose level of difficulty
-* Abilty to compare scores with previous players
+* A congratulations message when all cards are matched
 
 [Back to top](#table-of-content)
 
@@ -131,6 +128,7 @@ the project
 * [Gimp](https://www.gimp.org/) was used to edit photos.
 * [Favicon.cc](https://www.favicon.cc/) was used to create the fave icon
 * [Webformatter](https://webformatter.com/html) was used to beautify the code
+* [Copressor.io](https://compressor.io/) was used to compress the background image
 * [Gitpod](https://gitpod.io/) was used for coding the project
 * [Github](https://github.com/) was used to saved and stored on the project after being 
 pushed from Gitpod
@@ -146,8 +144,169 @@ pushed from Gitpod
 
 * Test 1
 ![Lighthouse test 1](assets/images/lighthouse-test1.png)
+* Test 2
+![Lighthouse test 1](assets/images/lighthouse-test2.png)
+* Test 3 ( test is run after the background image  was changed to a compressed image. )
+![Lighthouse test 1](assets/images/lighthouse-test3.png)
 
-### Bugs
+
+### User Stories
+**As a user I want to, know when I have a match**
+
+* Plan
+
+I want to create a message that will pop up every time the user match a pair of cards.
+My first idea was to have a specific message apply when a specific pair of cards are 
+matched. But I realized that it would probably be much more fun to get different 
+messages every time. And within the spiritual community so called “angel numbers” 
+are popular, so I decided to go with that instead
+
+* Implementation
+
+I created an array with eleven different messages. That way the user might get another 
+next time they play which will make it more fun. When two cards match after they are 
+fliped an alert will pop up for 2500 milliseconds displaying one of the messages in 
+the array.
+
+* Test
+
+At first I used a standard alert, but that included an OK button which needs to be 
+clicked. And I don’t want the user to have to click a button while playing. So I 
+used an alert from SweetAlerts that I customized so that random messages from the 
+array messageList will be displayed and so that it didn’t need to be clicked. 
+
+* Result
+
+Randomization of the messages works, and a different message pops up every time the 
+user gets a matched pair of cards. The message then disappear by it self after 
+2.5 seconds, or when the next time the board is clicked.
+
+* Verdict 
+
+The message works as planned
+
+
+**As a user I want to, know when all cards are matched**
+
+* Plan
+
+I want the user to know when all the cards are matched and the have won. Following the 
+spiritual theme for the game I want the message displayed be inline with the messages 
+shown when the user have a match.
+
+* Implementation
+
+I created a div with an overlay class and a winner-text id that will be called inside 
+the winner function in the javaScrit document. When the user have matched all cards 
+the winner function will be called and a message will overlay the screen congratulating 
+the winner and stop the timer.
+
+* Test
+
+Getting the winning screen to display when all the cards are matched was no problem. 
+But even though the screen is on top of the board the timer still counts down in the 
+background. And when it’s done the Game Over screen was also displayed. To stop this 
+from happening I added tStared from the gameTimer function and set it to false to stop 
+the timer and prevent the Game Over screen from showing
+
+* Result
+
+The winning screen works as planned and is displayed when the user have matched all 
+the cards on the board. The timer is stopped preventing a double overlay of screens.
+
+* Verdict 
+
+The winner screen works as planned.
+
+**As a user I want to, know how to play**
+
+* Plan
+
+I want to give the user a short and simple description of the game, and I want the 
+layout to make it easy to figure out how it’s played even if the description isn’t read. 
+
+* Implementation
+
+I created a modal that will be shown when the user clicks on the About button. 
+The modal gives the user a short description of the game theme and how to win. To 
+create the modal I use code from w3schools and customized it so it goes with the theme 
+of the game.
+
+* Test
+
+At first I created a second html page that I linked from the index.html. But after 
+talking with my mentor I went for using a modal instead to get a better user experience.
+
+* Result
+
+When the user opens the game they have the choice to click on the About button. 
+A modal will show up and tell them about the game
+
+* Verdict 
+
+The about modal works as planned.
+
+**As a user I want to, track my score**
+
+* Plan
+
+To make the game a little bit more exciting I also want the user to have some points 
+when they match a pair of cards.
+
+* Implementation
+
+ I created a span that would show the score, and I also created a variable for the 
+ score and then added it into the flipCard function. The span is pulled from the html 
+ to the js file using getElementById, and when the user matches two cards it gives the 
+ score of 10 points and they are shown right above the board.
+
+* Test
+
+By flipping the cards until there’s a match the score function is tested. 
+* Result
+
+Each time two cards match the score increases with 10 points. It is displayed right 
+above the board so that it’s easy for the user to see while continuing playing. 
+
+* Verdict 
+
+The score points works as planned.
+
+**As a user I want to, navigate the site with ease**
+
+* Plan
+
+I want it to be easy for the user to understand how navigate around the page and to 
+provide a layout that isn’t confusing
+
+* Implementation
+
+I created an overlay start screen that invites the user to enter the game by clicking it. 
+By clicking the overlay it removes the visible class and the cards are ready to be 
+clicked and the game can begin. The user also have the option to learn a little about 
+the game by clicking the about button and trigger the about modal.
+
+* Test
+
+The start screen is visible when the user enters the page. When the screen is clicked it 
+disappears and the user have a clear view of the board, timer, score and about button. 
+If the about button is clicked the about modal with information about the game pops up,
+and can easy be closed clicking the X in the corner. This takes the user back to the
+board to start the game.
+
+* Result
+
+It’s easy for the user to get a clear overview of the game and to keep track off the 
+score and time while playing. It’s also easy to find the about button to learn more 
+about the game. And the modal can be close in a simple way.
+
+* Verdict 
+
+It’s easy for the user to navigate the site.
+
+## Bugs
+
+**Timer**
 * **Bug**
 
 The countdown timer starts as soon as the user enters the site, and it runs in 
@@ -176,10 +335,23 @@ The timer now runs when the first card is clicked
 
 The Game Over screen doesn't show up when the time is out, and the user 
 can continue to flip cards.
+
 * **Fix**
 
+I started with commenting out document.getElementById("time-left") = gameOver(); since 
+that line was causing an error. Then I added clearInterval(this.countdown);  to set the
+ timer to 0 when the time has run out. I then realized that I needed to change 
+("time-left") to ("game-over-text") to call the correct div in the .html. After 
+that I added classList.add to target the visible so the Game Over screen pops up when the timer runs out.
+The user is still able to click the Game Over screen and continue flipping cards.
+To stop the user from doing this the cards need to be locked. So I call the variable 
+lockBoard and set it to true within the gameTimer function. When the time runs out the 
+board is locked and the user can’t continue to flip cards
 
 * **Verdict**
+
+The Game Over screen is displayed and the cards can’t be clicked when the timer 
+reaches 0.
 
 **White space**  
 * **Bug** 
